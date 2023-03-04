@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 17.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="336.705px" height="33.911px" viewBox="0 0 336.705 33.911" enable-background="new 0 0 336.705 33.911"
+	 xml:space="preserve">
+<g>
+	<defs>
+		<path id="SVGID_1_" d="M29.616,0L41.65,27.891c1.576,3.654,5.175,6.02,9.154,6.02h264.712c3.98,0,7.578-2.366,9.155-6.02
+			L336.705,0H29.616z"/>
+	</defs>
+	<clipPath id="SVGID_2_">
+		<use xlink:href="#SVGID_1_"  overflow="visible"/>
+	</clipPath>
+	
+		<linearGradient id="SVGID_3_" gradientUnits="userSpaceOnUse" x1="-136.4333" y1="508.5941" x2="-135.4333" y2="508.5941" gradientTransform="matrix(0 -16.2456 -16.2456 0 8445.5693 -2179.4199)">
+		<stop  offset="0" style="stop-color:#57934A"/>
+		<stop  offset="0.6419" style="stop-color:#7CAA4F"/>
+		<stop  offset="1" style="stop-color:#89B351"/>
+	</linearGradient>
+	<rect x="29.616" y="0" clip-path="url(#SVGID_2_)" fill="url(#SVGID_3_)" width="307.089" height="33.911"/>
+</g>
+<g>
+	<defs>
+		<path id="SVGID_4_" d="M148.254,0H33.044H0l12.034,27.891c1.136,2.633,3.33,4.58,5.952,5.472c0.52,0.345,1.137,0.548,1.793,0.548
+			h1.41h11.855h40.841h74.369h52.505c2.552,0,4.86-1.518,5.871-3.862l7.987-18.51c1.012-2.344,3.319-3.862,5.873-3.862h82.71
+			c2.653,0,5.17-1.171,6.878-3.198L313.851,0H148.254z"/>
+	</defs>
+	<clipPath id="SVGID_5_">
+		<use xlink:href="#SVGID_4_"  overflow="visible"/>
+	</clipPath>
+	
+		<linearGradient id="SVGID_6_" gradientUnits="userSpaceOnUse" x1="-123.2456" y1="507.766" x2="-122.2456" y2="507.766" gradientTransform="matrix(0 -37.2339 -37.2339 0 19063.0527 -4551.6304)">
+		<stop  offset="0" style="stop-color:#1B3258"/>
+		<stop  offset="0.5391" style="stop-color:#2E498E"/>
+		<stop  offset="1" style="stop-color:#4E82BF"/>
+	</linearGradient>
+	<rect y="0" clip-path="url(#SVGID_5_)" fill="url(#SVGID_6_)" width="313.851" height="33.911"/>
+</g>
+</svg>

@@ -1,0 +1,20 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-formqualita-dev-173544-authRole",
+      "UnauthRoleArn": "arn:aws:iam::500699536318:role/amplify-formqualita-dev-173544-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::500699536318:role/amplify-formqualita-dev-173544-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-formqualita-dev-173544-deployment",
+      "UnauthRoleName": "amplify-formqualita-dev-173544-unauthRole",
+      "StackName": "amplify-formqualita-dev-173544",
+      "StackId": "arn:aws:cloudformation:us-east-1:500699536318:stack/amplify-formqualita-dev-173544/bc7dcf20-ba13-11ed-953d-0e1712020b3f",
+      "AmplifyAppId": "d3dtnzharl3yp7"
+    },
+    "categories": {
+      "hosting": {
+        "S3AndCloudFront": {}
+      }
+    }
+  }
+}
