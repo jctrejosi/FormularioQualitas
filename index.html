@@ -38,40 +38,28 @@
       <!-- End Module 1 -->
 
       <!-- Form Consult -->
-        <div class="row">
-          <div class="col-12 col-md-8 offset-md-2 text-center text-md-left">
-            <h2 class="text-white d-inline py-2 px-4 titulo-formulario">Datos de consulta</h2>
-            <form class="my-4">
-              <div class="form-row my-1 align-items-center">
-                <div class="col-12 col-md-4">
-                  <label for="exampleInputPassword1" class="labels font-weight-bold">Tipo de documento</label>
-                </div>
-                <div class="col-12 col-md-8">
-                  <input value="Cedula Ciudadania" readonly type="text" class="form-control fon-inputs" id="exampleInputPassword1">
-                </div>
-              </div>
-              <div class="form-row my-1 align-items-center">
-                <div class="col-12 col-md-4">
-                  <label for="exampleInputPassword1" class="labels font-weight-bold">Identificación</label>
-                </div>
-                <div class="col-12 col-md-8">
-                  <input value="12345678910" readonly type="text" class="form-control fon-inputs" id="exampleInputPassword1">
-                </div>
-              </div>
-              <div class="form-row my-1 align-items-center">
-                <div class="col-12 col-md-4">
-                  <label for="exampleInputPassword1" class="labels font-weight-bold">Tipo de persona</label>
-                </div>
-                <div class="col-12 col-md-8">
-                  <input value="Natural" readonly type="text" class="form-control fon-inputs" id="exampleInputPassword1">
-                </div>
-              </div>
-              <div class="form-group">
-                <label for="exampleInputPassword1" class="labels font-weight-bold">Nombre completo/Razón social/Alias</label>
-                <input value="Pepito Perez" readonly type="text" class="form-control fon-inputs" id="exampleInputPassword1">
-              </div>
+        <div class="form-consult">
+            <div class="form-consult-title">
+                <h2>Datos de consulta</h2>
+            </div>
+            <form>
+                <label for="documentType">
+                  <span>Tipo de documento</span>
+                  <input type="text" name="documentType" id="documentType" placeholder="Cédula de ciudadanía">
+                </label>
+                <label for="documentNumber">
+                  <span>Identificación</span>
+                  <input type="number" name="documentNumber" id="documentNumber" placeholder="1059000001">
+                </label>
+                <label for="documentTypePerson">
+                  <span>Tipo de persona</span>
+                  <input type="text" name="documentTypePerson" id="documentTypePerson" placeholder="Natural">
+                </label>
+                <label for="documentAlias">
+                  <span>Nombre completo / Razón social / Alias</span>
+                  <input type="text" id="documentAlias" placeholder="Alias">
+                </label>
             </form>
-          </div>
         </div>
       <!-- End Form Consult -->
     </div>
