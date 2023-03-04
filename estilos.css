@@ -1,6 +1,69 @@
 :root{
 	--azul:#233c71;
 }
+.container {
+	padding: 6rem 0;
+}
+
+.container-title-informe {
+	align-items: center;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	margin-bottom: 7rem;
+}
+
+.logo-user-validacion > img {
+	max-width: 8rem;
+}
+
+.titulo-validacion {
+	background: linear-gradient(#3C64AC,#243B6E);
+	align-items: center;
+	display: flex;
+	position: relative;
+	justify-content: left;
+	height: 6rem;
+	padding-left: 2rem;
+	margin-right: 2rem;
+}
+
+.titulo-validacion::before {
+	content: "";
+	height: 100%;
+	background: linear-gradient(#3C64AC,#243B6E);
+	position: absolute;
+	right: -2rem;
+	border-radius: 0 1.5rem 0 0;
+	top: 0;
+	width: 5rem;
+	transform: skew(-15deg);
+	z-index: -1;
+}
+
+.titulo-validacion p {
+	font-size: 1.3rem;
+	line-height: 1;
+	font-weight: bold;
+	max-width: 8rem;
+}
+
+@media (min-width: 769px) {
+	.titulo-validacion {
+		height: 8rem;
+		margin-right: 5rem;
+	}
+
+	.titulo-validacion p {
+		font-size: 2rem;
+		max-width: 11rem;
+	}
+
+	.titulo-validacion-logo {
+		width: 5rem;
+	}
+}
+
 .w-80{
 	width: 80% !important;
 }
@@ -48,7 +111,7 @@
 .titulo-formulario{
 	font-size: 1.6rem;
 }
-.titulo-validacion, 
+
 .titulo-formulario,
 .titulo-formulario2,
 .titulo-circulos,
@@ -57,28 +120,20 @@
 .titulo-listas,
 .titulo-pie,
 .titulo-listas-info{
- background-image: url(imagenes/fondo-titulo.svg);
- background-repeat: no-repeat;
- background-size: 100%;
- height: 200px;
+	background-image: url(imagenes/fondo-titulo.svg);
+	background-repeat: no-repeat;
+	background-size: 100%;
+	height: 200px;
 }
 .titulo-formulario2 {
 	height: 100px;
 	font-size: 1.3rem;
 }
-.titulo-validacion{
-	background-image: url(imagenes/fondo1.svg);
-	background-size: cover;
-	background-position-x: right;
+
+.titulo-validacion-logo {
+	width: 3rem;
 }
-.titulo-validacion img{
-	width: 100px;
-}
-.titulo-validacion p{
-	font-size: 2rem;
-	line-height: 1;
-	font-weight: bold;
-}
+
 .logo-central img{
 	width: 280px;
 }
@@ -647,12 +702,6 @@ background: linear-gradient(to top, #2c3e50, #bdc3c7); /* W3C, IE 10+/ Edge, Fir
 	.logos {
 			width: 150px;
 	}
-	.titulo-validacion img {
-			width: 75px;
-	}
-	.titulo-validacion p {
-			font-size: 1.3rem;
-	}
 	.logo-central img {
 			width: 185px;
 	}
@@ -702,12 +751,6 @@ background: linear-gradient(to top, #2c3e50, #bdc3c7); /* W3C, IE 10+/ Edge, Fir
 	}
 	.logos {
 			width: 150px;
-	}
-	.titulo-validacion img {
-			width: 100px;
-	}
-	.titulo-validacion p {
-			font-size: 1.3rem;
 	}
 	.logo-central img {
 			width: 185px;

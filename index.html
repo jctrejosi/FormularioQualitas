@@ -12,7 +12,7 @@
   <body>
     <!-- cabecera -->
     <div class="container-fluid cabecera">
-		<img src="imagenes/fondo.svg" alt="">
+	    	<img src="imagenes/fondo.svg" alt="">
         <div class="row align-items-center h-100">
             <div class="col-12 col-md-6">
                     <img class="logos" src="imagenes/logo1.png" alt="">
@@ -24,110 +24,57 @@
             </div>
         </div>
     </div>
-    <!-- Pagina 1 -->
     <div class="container">
-      <div class="row my-2 my-md-4 my-lg-5">
-        <div class="col-12 col-md-4 offset-md-2 conten-informe-validacion d-flex align-items-center">
-            <div class="pl-4 titulo-validacion d-flex align-items-center">
-                <img src="imagenes/logo4.svg" alt="">
+      <!-- Module 1 -->
+        <div class="container-title-informe">
+            <div class="titulo-validacion">
+                <img class="titulo-validacion-logo" src="imagenes/logo4.svg" alt="">
                 <p class="ml-3 text-white text-wrap">Informe de Validación</p>
             </div>
-        </div>
-          <div class="col-12 col-md-4">
-            <div class="logo-central my-2 my-md-5 text-center">
-               <img src="imagenes/logo3.png" alt="">
+            <div class="logo-user-validacion">
+              <img src="imagenes/logo3.png" alt="">
             </div>
+        </div>
+      <!-- End Module 1 -->
+
+      <!-- Form Consult -->
+        <div class="row">
+          <div class="col-12 col-md-8 offset-md-2 text-center text-md-left">
+            <h2 class="text-white d-inline py-2 px-4 titulo-formulario">Datos de consulta</h2>
+            <form class="my-4">
+              <div class="form-row my-1 align-items-center">
+                <div class="col-12 col-md-4">
+                  <label for="exampleInputPassword1" class="labels font-weight-bold">Tipo de documento</label>
+                </div>
+                <div class="col-12 col-md-8">
+                  <input value="Cedula Ciudadania" readonly type="text" class="form-control fon-inputs" id="exampleInputPassword1">
+                </div>
+              </div>
+              <div class="form-row my-1 align-items-center">
+                <div class="col-12 col-md-4">
+                  <label for="exampleInputPassword1" class="labels font-weight-bold">Identificación</label>
+                </div>
+                <div class="col-12 col-md-8">
+                  <input value="12345678910" readonly type="text" class="form-control fon-inputs" id="exampleInputPassword1">
+                </div>
+              </div>
+              <div class="form-row my-1 align-items-center">
+                <div class="col-12 col-md-4">
+                  <label for="exampleInputPassword1" class="labels font-weight-bold">Tipo de persona</label>
+                </div>
+                <div class="col-12 col-md-8">
+                  <input value="Natural" readonly type="text" class="form-control fon-inputs" id="exampleInputPassword1">
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="exampleInputPassword1" class="labels font-weight-bold">Nombre completo/Razón social/Alias</label>
+                <input value="Pepito Perez" readonly type="text" class="form-control fon-inputs" id="exampleInputPassword1">
+              </div>
+            </form>
           </div>
-      </div>
-      <div class="row">
-        <div class="col-12 col-md-8 offset-md-2 text-center text-md-left">
-          <h2 class="text-white d-inline py-2 px-4 titulo-formulario">Datos de consulta</h2>
-          <form class="my-4">
-            <div class="form-row my-1 align-items-center">
-              <div class="col-12 col-md-4">
-                <label for="exampleInputPassword1" class="labels font-weight-bold">Tipo de documento</label>
-              </div>
-              <div class="col-12 col-md-8">
-                <input value="Cedula Ciudadania" readonly type="text" class="form-control fon-inputs" id="exampleInputPassword1">
-              </div>
-            </div>
-            <div class="form-row my-1 align-items-center">
-              <div class="col-12 col-md-4">
-                <label for="exampleInputPassword1" class="labels font-weight-bold">Identificación</label>
-              </div>
-              <div class="col-12 col-md-8">
-                <input value="12345678910" readonly type="text" class="form-control fon-inputs" id="exampleInputPassword1">
-              </div>
-            </div>
-            <div class="form-row my-1 align-items-center">
-              <div class="col-12 col-md-4">
-                <label for="exampleInputPassword1" class="labels font-weight-bold">Tipo de persona</label>
-              </div>
-              <div class="col-12 col-md-8">
-                <input value="Natural" readonly type="text" class="form-control fon-inputs" id="exampleInputPassword1">
-              </div>
-            </div>
-            <div class="form-group">
-              <label for="exampleInputPassword1" class="labels font-weight-bold">Nombre completo/Razón social/Alias</label>
-              <input value="Pepito Perez" readonly type="text" class="form-control fon-inputs" id="exampleInputPassword1">
-            </div>
-          </form>
         </div>
-      </div>
+      <!-- End Form Consult -->
     </div>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <!-- informe de validacion -->
-    <!--<div class="container limite-pagina-1">
-      <h2 class="text-white d-inline py-2 px-4 titulo-formulario2">Información adicional de la consulta</h2>
-        <p class="labels mt-3">(Aplica para contrapartes registradas en la base de datos)</p>
-      <div class="row my-2 my-md-5">
-        <form class="my-2 row text-center">
-            <div class="col-12 col-md-2 py-1">
-              <label for="exampleInputPassword1" class="labels font-weight-bold">Edad/Antigüedad</label>
-            </div>
-            <div class="col-12 col-md-4 py-1">
-              <input value="5" readonly type="text" class="form-control fon-inputs" id="exampleInputPassword1">
-            </div>
-            <div class="col-12 col-md-2 py-1">
-              <label for="exampleInputPassword1" class="labels font-weight-bold">Nacionalidad</label>
-            </div>
-            <div class="col-12 col-md-4 py-1">
-              <input value="Colombiano" readonly type="text" class="form-control fon-inputs" id="exampleInputPassword1">
-            </div>
-            <div class="col-12 col-md-2 py-1">
-              <label for="exampleInputPassword1" class="labels font-weight-bold">Fecha vinculación</label>
-            </div>
-            <div class="col-12 col-md-4 py-1">
-              <input value="23-4-2020" readonly type="text" class="form-control fon-inputs" id="exampleInputPassword1">
-            </div>
-            <div class="col-12 col-md-2 py-1">
-              <label for="exampleInputPassword1" class="labels font-weight-bold">Score Riesgo LAFT</label>
-            </div>
-            <div class="col-12 col-md-4 py-1">
-              <input value="873" readonly type="text" class="form-control fon-inputs" id="exampleInputPassword1">
-          </div>
-          <div class="col-12 col-md-2 py-1">
-            <label for="exampleInputPassword1" class="labels font-weight-bold">Tipo de Contraparte</label>
-          </div>
-          <div class="col-12 col-md-10 py-1">
-            <input value="No aplica" readonly type="text" class="form-control fon-inputs" id="exampleInputPassword1">
-          </div>
-          <div class="col-12 col-md-2 py-1">
-            <label for="exampleInputPassword1" class="labels text-wrap font-weight-bold">Actividad / Ocupación</label>
-          </div>
-          <div class="col-12 col-md-10 py-1">
-            <input value="Contador Publico" readonly type="text" class="form-control fon-inputs" id="exampleInputPassword1">
-          </div>
-        </form>
-      </div>
-    </div>-->
-    <!-- fin Pagina 1 -->
-    <!-- Pie -->
     <div class="pie my-5">
       <div class="row w-100">
         <div class="col-12 offset-lg-1 col-lg-6">
