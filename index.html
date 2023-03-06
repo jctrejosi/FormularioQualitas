@@ -63,72 +63,47 @@
         </div>
       <!-- End Form Consult -->
     </div>
-    <div class="pie my-5">
-      <div class="row w-100">
-        <div class="col-12 offset-lg-1 col-lg-6">
-          <div class="row justify-content-center w-100">
-            <h2 class="text-white d-inline py-2 px-4 titulo-pie">Usuario y entidad que realiza la consulta:</h2>
-          </div>
-          <div class="row w-100">
-            <form class="my-2 text-center w-100">
-              <div class="form-row">
-                <div class="col-12 col-md-9">
-                  <div class="form-row my-1">
-                    <div class="col-12 col-md-4">
-                      <label for="exampleInputEmail1">Fecha generación</label>
-                    </div>
-                    <div class="col-12 col-md-5">
-                      <input value="24-04-2020" readonly type="text" class="form-control fon-inputs">
-                    </div>
-                    <div class="col-12 col-md-1">
-                      <label for="exampleInputEmail1">Hora</label>
-                    </div>
-                    <div class="col-12 col-md-2">
-                      <input value="08:00" readonly type="text" class="form-control fon-inputs">
-                    </div>
-                  </div> 
-                  <div class="form-row my-1">
-                    <div class="col-12 col-md-4">
-                      <label for="exampleInputEmail1">ID Reporte</label>
-                    </div>
-                    <div class="col-12 col-md-8">
-                      <input value="09122323" readonly type="text" class="form-control fon-inputs">
-                    </div>
-                  </div>
-                  <div class="form-row my-1">
-                    <div class="col-12 col-md-4">
-                      <label for="exampleInputEmail1">Usuario del sistema</label>
-                    </div>
-                    <div class="col-12 col-md-8">
-                      <input value="Pepito Perez" readonly type="text" class="form-control fon-inputs">
-                    </div>
-                  </div> 
-                </div>
-                <div class="col-12 col-md-3">
-                  <img src="imagenes/usuario.png" width="130px" alt="" class="img-fluid rounded border border-secundary">
-                </div>
-              </div>
-            </form>   
-          </div>
+
+    <div class="user-consult">
+      <div class="user-consult-col">
+        <div class="form-consult-title mb-4">
+          <h2>Usuario ó entidad que realiza la consulta:</h2>
         </div>
-        <div class="col-12 col-lg-5 mt-2 mt-sm-5 fondo-pie-movil">
-          <div class="row pt-3 w-100 justify-content-center">
-            <img class="logos2" src="imagenes/logo-blanco.png" alt="">
-            <img class="logos2" src="imagenes/logo-blanco2.png" alt="">
-          </div>
-          <div class="row w-100">
-            <div class="col-12 col-md-10 offset-sm-1">
-              <p class="texto-pie text-white">Los resultados de este informe son válidos únicamente el día de su generación. Las
-                consultas realizadas por el motor de búsqueda de XploraTM busca en diferentes fuentes de
-                información públicas y/o fuentes privadas de la institución a las que se tiene acceso. En
-                ningún caso estas fuentes de información son administradas por QUALITA CORP SAS y el
-                uso que se le de a la información aquí contenida es responsabilidad del usuario que realiza
-                la consulta..</p>
-            </div>
-          </div>
-        </div>
+        <form class="form-user-consult">
+          <label for="userConsultDate">
+            <span>Fecha</span>
+            <input type="text" id="userConsultDate" placeholder="24-04-2020">
+          </label>
+          <label for="userConsultHour">
+            <span>Hora</span>
+            <input type="text" id="userConsultHour" placeholder="00:00">
+          </label>
+          <label for="userConsultIdReport">
+            <span>ID del reporte</span>
+            <input type="text" id="userConsultIdReport" placeholder="012345">
+          </label>
+          <label for="userConsultName">
+            <span>Usuario</span>
+            <input type="text" id="userConsultName" placeholder="Nombre">
+          </label>
+        </form>
       </div>
-  </div>
+      <div class="user-consult-col">
+        <div>
+          <img class="logos2" src="imagenes/logo-blanco.png" alt="">
+          <img class="logos2" src="imagenes/logo-blanco2.png" alt="">
+        </div>
+        <p>
+          Los resultados de este informe son válidos únicamente el día de su generación. Las
+          consultas realizadas por el motor de búsqueda de XploraTM busca en diferentes fuentes de
+          información públicas y/o fuentes privadas de la institución a las que se tiene acceso. En
+          ningún caso estas fuentes de información son administradas por QUALITA CORP SAS y el
+          uso que se le de a la información aquí contenida es responsabilidad del usuario que realiza
+          la consulta..
+        </p>
+      </div>
+    </div>
+
  <!-- cabecera -->
  <div class="container-fluid cabecera">
   <div class="row align-items-center h-100">
