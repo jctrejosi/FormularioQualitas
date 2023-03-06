@@ -10,11 +10,6 @@
       "StackName": "amplify-formqualita-dev-173544",
       "StackId": "arn:aws:cloudformation:us-east-1:500699536318:stack/amplify-formqualita-dev-173544/bc7dcf20-ba13-11ed-953d-0e1712020b3f",
       "AmplifyAppId": "d3dtnzharl3yp7"
-    },
-    "categories": {
-      "hosting": {
-        "S3AndCloudFront": {}
-      }
     }
   }
 }
