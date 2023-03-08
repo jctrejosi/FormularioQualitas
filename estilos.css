@@ -1,8 +1,35 @@
 :root{
+	--corporate:#ffa126;
+	--corporate-light:#ffa737;
 	--blue:#233c71;
 	--blue-gradient: linear-gradient(#5980c9, var(--blue));
 	--red-gradient: linear-gradient(#f7596e,#f31230);
 	--green-gradient: linear-gradient(#45d37b,#07a042);
+}
+
+.btn-print {
+	align-items: center;
+	background: var(--corporate);
+	border-radius: 1rem;
+	bottom: 1rem;
+	color: white;
+	display: flex;
+	padding: .3rem 1rem;
+	position: fixed;
+	right: 1rem;
+	z-index: 1;
+	transition: color .3s, background-color .3s;
+}
+
+.btn-print img {
+	height: 1rem;
+	margin-left: .5rem;
+	width: 1rem;
+}
+
+.btn-print:hover {
+	background-color: var(--corporate-light);
+	color: white;
 }
 
 .header{
