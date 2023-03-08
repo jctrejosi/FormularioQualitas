@@ -11,19 +11,16 @@
   </head>
   <body>
     <!-- cabecera -->
-    <div class="container-fluid cabecera">
-	    	<img src="imagenes/fondo.svg" alt="">
-        <div class="row align-items-center h-100">
-            <div class="col-12 col-md-6">
-                    <img class="logos" src="imagenes/logo1.png" alt="">
-                    <img class="logos" src="imagenes/logo2.png" alt="">
-            </div>
-            <div class="col-12 col-md-6 cabecera-icons">
-                <h2 class="text-white py-2 px-2 p-md-3 py-lg-4 px-lg-5 m-0 texto-cabecera">REGTECH especializada en prevención
-                    de crímenes financieros</h2>
-            </div>
+    <header class="header">
+      <img class="header-bg" src="imagenes/fondo.svg" alt="">
+        <div class="header-logos">
+          <img class="logos" src="imagenes/logo1.png" alt="">
+          <img class="logos" src="imagenes/logo2.png" alt="">
         </div>
-    </div>
+        <div class="header-text">
+          <h2>REGTECH especializada en prevención de crímenes financieros</h2>
+        </div>
+    </header>
     <div class="container">
       <!-- Module 1 -->
         <div class="container-title-informe">
@@ -64,46 +61,6 @@
       <!-- End Form Consult -->
     </div>
 
-    <div class="user-consult">
-      <div class="user-consult-col">
-        <div class="form-consult-title mb-4">
-          <h2>Usuario ó entidad que realiza la consulta:</h2>
-        </div>
-        <form class="form-user-consult">
-          <label for="userConsultDate">
-            <span>Fecha</span>
-            <input type="text" id="userConsultDate" placeholder="24-04-2020">
-          </label>
-          <label for="userConsultHour">
-            <span>Hora</span>
-            <input type="text" id="userConsultHour" placeholder="00:00">
-          </label>
-          <label for="userConsultIdReport">
-            <span>ID del reporte</span>
-            <input type="text" id="userConsultIdReport" placeholder="012345">
-          </label>
-          <label for="userConsultName">
-            <span>Usuario</span>
-            <input type="text" id="userConsultName" placeholder="Nombre">
-          </label>
-        </form>
-      </div>
-      <div class="user-consult-col">
-        <div>
-          <img class="logos2" src="imagenes/logo-blanco.png" alt="">
-          <img class="logos2" src="imagenes/logo-blanco2.png" alt="">
-        </div>
-        <p>
-          Los resultados de este informe son válidos únicamente el día de su generación. Las
-          consultas realizadas por el motor de búsqueda de XploraTM busca en diferentes fuentes de
-          información públicas y/o fuentes privadas de la institución a las que se tiene acceso. En
-          ningún caso estas fuentes de información son administradas por QUALITA CORP SAS y el
-          uso que se le de a la información aquí contenida es responsabilidad del usuario que realiza
-          la consulta..
-        </p>
-      </div>
-    </div>
-
   <!-- Buttons Type -->
   <div class="buttons-type">
     <h3>Tipos de botones</h3>
@@ -117,1397 +74,275 @@
   <!-- End Buttons Type -->
 
 <!-- basic data -->
-<div class="container-basic-data">
-  <div class="title">
-    <h2>Datos básicos de la consulta</h2>
-  </div>
-  <div class="container-basic-data-averages">
-    <h3>Porcentaje de coincidencia</h3>
-    <div class="container-basic-data-graphs">
-      <div class="container-basic-data-graph">
-        <div class="progress blue">
-          <span class="progress-left">
-            <span class="progress-bar"></span>
-          </span>
-          <span class="progress-right">
-            <span class="progress-bar"></span>
-          </span>
-          <div class="progress-value btn-circle--active">90%</div>
+  <div class="container-basic-data">
+    <div class="title">
+      <h2>Datos básicos de la consulta</h2>
+    </div>
+
+    <!-- averages -->
+    <div class="container-basic-data-averages">
+      <h3 class="subtitle-underlined">Porcentaje de coincidencia</h3>
+      <div class="container-basic-data-graphs">
+        <div class="container-basic-data-graph">
+          <div class="progress blue">
+            <span class="progress-left">
+              <span class="progress-bar"></span>
+            </span>
+            <span class="progress-right">
+              <span class="progress-bar"></span>
+            </span>
+            <div class="progress-value btn-circle--active">90%</div>
+          </div>
+          <span>Value</span>
         </div>
-        <span>Value</span>
-      </div>
-      <div class="container-basic-data-graph">
-        <div class="progress blue">
-          <span class="progress-left">
-            <span class="progress-bar"></span>
-          </span>
-          <span class="progress-right">
-            <span class="progress-bar"></span>
-          </span>
-          <div class="progress-value btn-circle--active">90%</div>
+        <div class="container-basic-data-graph">
+          <div class="progress blue">
+            <span class="progress-left">
+              <span class="progress-bar"></span>
+            </span>
+            <span class="progress-right">
+              <span class="progress-bar"></span>
+            </span>
+            <div class="progress-value btn-circle--active">90%</div>
+          </div>
+          <span>Value</span>
         </div>
-        <span>Value</span>
-      </div>
-      <div class="container-basic-data-graph">
-        <div class="progress blue">
-          <span class="progress-left">
-            <span class="progress-bar"></span>
-          </span>
-          <span class="progress-right">
-            <span class="progress-bar"></span>
-          </span>
-          <div class="progress-value btn-circle--active">90%</div>
+        <div class="container-basic-data-graph">
+          <div class="progress blue">
+            <span class="progress-left">
+              <span class="progress-bar"></span>
+            </span>
+            <span class="progress-right">
+              <span class="progress-bar"></span>
+            </span>
+            <div class="progress-value btn-circle--inactive">90%</div>
+          </div>
+          <span>Value</span>
         </div>
-        <span>Value</span>
       </div>
     </div>
+    <!-- end averages -->
+
+    <!-- fields consult -->
+    <div class="container-basic-data-fields">
+      <h3 class="subtitle-underlined">Campos consultados</h3>
+      <ul>
+        <li>
+          <img src="/imagenes/check.png" alt="Icon-chek">
+          <span>Campo</span>
+        </li>
+        <li>
+          <img src="/imagenes/check.png" alt="Icon-chek">
+          <span>Campo</span>
+        </li>
+        <li>
+          <img src="/imagenes/check.png" alt="Icon-chek">
+          <span>Campo</span>
+        </li>
+        <li>
+          <img src="/imagenes/cross.png" alt="Icon-chek">
+          <span>Campo</span>
+        </li>
+      </ul>
+    </div>
+    <!-- end fields consult -->
+
+    <!-- Type consult -->
+    <div class="container-basic-data-type">
+      <h3 class="subtitle-underlined">Tipo de consulta</h3>
+      <ul>
+        <li>
+          <img src="/imagenes/checkbox.png" alt="Icon-chek">
+          <span>Tipo</span>
+        </li>
+        <li>
+          <img src="/imagenes/checkon.png" alt="Icon-chek">
+          <span>Tipo</span>
+        </li>
+        <li>
+          <img src="/imagenes/checkon.png" alt="Icon-chek">
+          <span>Tipo</span>
+        </li>
+      </ul>
+    </div>
+    <!-- End type consult -->
   </div>
-</div>
 <!-- End basic data -->
 
-<!-- cabecera -->
-<div class="container-fluid cabecera">
-  <div class="row align-items-center h-100">
-      <div class="col-12 col-md-6">
-              <img class="logos" src="imagenes/logo1.png" alt="">
-              <img class="logos" src="imagenes/logo2.png" alt="">
-      </div>
-      <div class="col-12 col-md-6">
-          <h2 class="text-white py-2 px-2 p-md-3 py-lg-4 px-lg-5 m-0 texto-cabecera">REGTECH especializada en prevención
-              de crímenes financieros</h2>
-      </div>
-  </div>
-</div>
-<!-- Pagina 3 -->
-<!-- resumen de busqueda -->
-<div class="container">
-      <div class="row justify-content-center w-100">
-        <h2 class="text-white d-flex justify-content-around align-items-center py-2 px-4 titulo-resumen"> <span class="span">Resumen búsqueda</span><span class="span">Riesgo LAFT</span> </h2>
-      </div>
-      <div class="row w-100 my-2 my-md-5">
-        <div class="col-12 col-md-4">
-          <div class="row justify-content-center w-100">
-            <h2 class="text-white d-inline py-2 px-4 titulo-listas">Listas Colombia</h2>
-          </div>
-          <div class="row px-4">
-            <table class="table table-striped">
-              <thead>
-                <tr>
-                  <th scope="col">#</th>
-                  <th scope="col">First</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <th scope="row">
-                    <form>
-      <input type="checkbox" name="checkbox" id="checkbox-list-roja1"> 
-      <label class="checkbox-rojo" for="checkbox-list-roja1"></label>
-    </form>
-                  </th>
-                  <td>Mark</td>
-                </tr>
-                <tr>
-                  <th scope="row">
-                    <form>
-      <input type="checkbox" name="checkbox" id="checkbox-list-roja2"> 
-      <label class="checkbox-rojo" for="checkbox-list-roja2"></label>
-    </form>
-                  </th>
-                  <td>Jacob</td>
-                </tr>
-                <tr>
-                  <th scope="row">
-                    <form>
-      <input type="checkbox" name="checkbox" id="checkbox-list-roja2"> 
-      <label class="checkbox-rojo" for="checkbox-list-roja2"></label>
-    </form>
-                  </th>
-                  <td>Larry</td>
-                </tr>
-                <tr>
-                  <th scope="row">
-                    <form>
-      <input type="checkbox" name="checkbox" id="checkbox-list-roja3"> 
-      <label class="checkbox-rojo" for="checkbox-list-roja3"></label>
-    </form>
-                  </th>
-                  <td>Mark</td>
-                </tr>
-                <tr>
-                  <th scope="row">
-                    <form>
-      <input type="checkbox" name="checkbox" id="checkbox-list-roja3"> 
-      <label class="checkbox-rojo" for="checkbox-list-roja3"></label>
-    </form>
-                  </th>
-                  <td>Jacob</td>
-                </tr>
-                <tr>
-                  <th scope="row">
-                    <form>
-      <input type="checkbox" name="checkbox" id="checkbox-list-roja4"> 
-      <label class="checkbox-rojo" for="checkbox-list-roja4"></label>
-    </form>
-                  </th>
-                  <td>Larry</td>
-                </tr>
-                <tr>
-                  <th scope="row">
-                    <form>
-      <input type="checkbox" name="checkbox" id="checkbox-list-roja4"> 
-      <label class="checkbox-rojo" for="checkbox-list-roja4"></label>
-    </form>
-                  </th>
-                  <td>Mark</td>
-                </tr>
-                <tr>
-                  <th scope="row">
-                    <form>
-      <input type="checkbox" name="checkbox" id="checkbox-list-roja5"> 
-      <label class="checkbox-rojo" for="checkbox-list-roja5"></label>
-    </form>
-                  </th>
-                  <td>Jacob</td>
-                </tr>
-                <tr>
-                  <th scope="row">
-                    <form>
-      <input type="checkbox" name="checkbox" id="checkbox-list-roja6"> 
-      <label class="checkbox-rojo" for="checkbox-list-roja6"></label>
-    </form>
-                  </th>
-                  <td>Larry</td>
-                </tr>
-                <tr>
-                  <th scope="row">
-                    <form>
-      <input type="checkbox" name="checkbox" id="checkbox-list-roja6"> 
-      <label class="checkbox-rojo" for="checkbox-list-roja6"></label>
-    </form>
-                  </th>
-                  <td>Larry</td>
-                </tr>
-                <tr>
-                  <th scope="row">
-                    <form>
-      <input type="checkbox" name="checkbox" id="checkbox-list-roja7"> 
-      <label class="checkbox-rojo" for="checkbox-list-roja7"></label>
-    </form>
-                  </th>
-                  <td>Mark</td>
-                </tr>
-                <tr>
-                  <th scope="row">
-                    <form>
-      <input type="checkbox" name="checkbox" id="checkbox-list-roja7"> 
-      <label class="checkbox-rojo" for="checkbox-list-roja7"></label>
-    </form>
-                  </th>
-                  <td>Jacob</td>
-                </tr>
-                <tr>
-                  <th scope="row">
-                    <form>
-      <input type="checkbox" name="checkbox" id="checkbox-list-roja8"> 
-      <label class="checkbox-rojo" for="checkbox-list-roja8"></label>
-    </form>
-                  </th>
-                  <td>Larry</td>
-                </tr>
-                <tr>
-                  <th scope="row">
-                    <form>
-      <input type="checkbox" name="checkbox" id="checkbox-list-roja9"> 
-      <label class="checkbox-rojo" for="checkbox-list-roja9"></label>
-    </form>
-                  </th>
-                  <td>Jacob</td>
-                </tr>
-                <tr>
-                  <th scope="row">
-                    <form>
-      <input type="checkbox" name="checkbox" id="checkbox-list-roja9"> 
-      <label class="checkbox-rojo" for="checkbox-list-roja9"></label>
-    </form>
-                  </th>
-                  <td>Jacob</td>
-                </tr>
-                <tr>
-                  <th scope="row">
-                    <form>
-      <input type="checkbox" name="checkbox" id="checkbox-list-roja9"> 
-      <label class="checkbox-rojo" for="checkbox-list-roja9"></label>
-    </form>
-                  </th>
-                  <td>Jacob</td>
-                </tr>
-                <tr>
-                  <th scope="row">
-                    <form>
-      <input type="checkbox" name="checkbox" id="checkbox-list-roja9"> 
-      <label class="checkbox-rojo" for="checkbox-list-roja9"></label>
-    </form>
-                  </th>
-                  <td>Jacob</td>
-                </tr>
-
-              </tbody>
-            </table>
-          </div>
-        </div>
-        <div class="col-12 col-md-8">
-          <div class="row justify-content-center w-100">
-            <h2 class="text-white d-inline py-2 px-4 titulo-listas">Listas Internacionales</h2>
-          </div>
-          <div class="row px-4">
-            <table class="table table-striped table-secundary">
-              <thead>
-                <tr>
-                  <th scope="col">#</th>
-                  <th scope="col">First</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <th scope="row">
-                    <form>
-      <input type="checkbox" name="checkbox" id="checkbox-list-roja10"> 
-      <label class="checkbox-rojo" for="checkbox-list-roja10"></label>
-    </form>
-                  </th>
-                  <td>Mark</td>
-                </tr>
-                <tr>
-                  <th scope="row">
-                    <form>
-      <input type="checkbox" name="checkbox" id="checkbox-list-roja11"> 
-      <label class="checkbox-rojo" for="checkbox-list-roja11"></label>
-    </form>
-                  </th>
-                  <td>Jacob</td>
-                </tr>
-                <tr>
-                  <th scope="row">
-                    <form>
-      <input type="checkbox" name="checkbox" id="checkbox-list-roja12"> 
-      <label class="checkbox-rojo" for="checkbox-list-roja12"></label>
-    </form>
-                  </th>
-                  <td>Larry</td>
-                </tr>
-                <tr>
-                  <th scope="row">
-                    <form>
-      <input type="checkbox" name="checkbox" id="checkbox-list-roja13"> 
-      <label class="checkbox-rojo" for="checkbox-list-roja13"></label>
-    </form>
-                  </th>
-                  <td>Mark</td>
-                </tr>
-                <tr>
-                  <th scope="row">
-                    <form>
-      <input type="checkbox" name="checkbox" id="checkbox-list-roja14"> 
-      <label class="checkbox-rojo" for="checkbox-list-roja14"></label>
-    </form>
-                  </th>
-                  <td>Jacob</td>
-                </tr>
-                <tr>
-                  <th scope="row">
-                    <form>
-      <input type="checkbox" name="checkbox" id="checkbox-list-roja15"> 
-      <label class="checkbox-rojo" for="checkbox-list-roja15"></label>
-    </form>
-                  </th>
-                  <td>Larry</td>
-                </tr>
-                <tr>
-                  <th scope="row">
-                    <form>
-      <input type="checkbox" name="checkbox" id="checkbox-list-roja16"> 
-      <label class="checkbox-rojo" for="checkbox-list-roja16"></label>
-    </form>
-                  </th>
-                  <td>Mark</td>
-                </tr>
-                <tr>
-                  <th scope="row">
-                    <form>
-      <input type="checkbox" name="checkbox" id="checkbox-list-roja17"> 
-      <label class="checkbox-rojo" for="checkbox-list-roja17"></label>
-    </form>
-                  </th>
-                  <td>Jacob</td>
-                </tr>
-                <tr>
-                  <th scope="row">
-                    <form>
-      <input type="checkbox" name="checkbox" id="checkbox-list-roja18"> 
-      <label class="checkbox-rojo" for="checkbox-list-roja18"></label>
-    </form>
-                  </th>
-                  <td>Larry</td>
-                </tr>
-                <tr>
-                  <th scope="row">
-                    <form>
-      <input type="checkbox" name="checkbox" id="checkbox-list-roja19"> 
-      <label class="checkbox-rojo" for="checkbox-list-roja19"></label>
-    </form>
-                  </th>
-                  <td>Mark</td>
-                </tr>
-                <tr>
-                  <th scope="row">
-                    <form>
-      <input type="checkbox" name="checkbox" id="checkbox-list-roja20"> 
-      <label class="checkbox-rojo" for="checkbox-list-roja20"></label>
-    </form>
-                  </th>
-                  <td>Jacob</td>
-                </tr>
-                <tr>
-                  <th scope="row">
-                    <form>
-      <input type="checkbox" name="checkbox" id="checkbox-list-roja21"> 
-      <label class="checkbox-rojo" for="checkbox-list-roja21"></label>
-    </form>
-                  </th>
-                  <td>Larry</td>
-                </tr>
-                <tr>
-                  <th scope="row">
-                    <form>
-      <input type="checkbox" name="checkbox" id="checkbox-list-roja22"> 
-      <label class="checkbox-rojo" for="checkbox-list-roja22"></label>
-    </form>
-                  </th>
-                  <td>Mark</td>
-                </tr>
-                <tr>
-                  <th scope="row">
-                    <form>
-      <input type="checkbox" name="checkbox" id="checkbox-list-roja23"> 
-      <label class="checkbox-rojo" for="checkbox-list-roja23"></label>
-    </form>
-                  </th>
-                  <td>Jacob</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-        </div>
-      </div>
-</div>
-<br>
-<br>
-
-<!-- fin Pagina 3 -->
-<!-- Pie 
-<div class="pie">
-  <div class="row w-100">
-    <div class="col-12 offset-lg-1 col-lg-6">
-      <div class="row justify-content-center w-100">
-        <h2 class="text-white d-inline py-2 px-4 titulo-pie">Usuario y entidad que realiza la consulta:</h2>
-      </div>
-      <div class="row w-100">
-        <form class="my-2 text-center w-100">
-          <div class="form-row">
-            <div class="col-12 col-md-9">
-              <div class="form-row my-1">
-                <div class="col-12 col-md-4">
-                  <label for="exampleInputEmail1">Fecha generación</label>
-                </div>
-                <div class="col-12 col-md-5">
-                  <input value="24-04-2020" readonly type="text" class="form-control fon-inputs">
-                </div>
-                <div class="col-12 col-md-1">
-                  <label for="exampleInputEmail1">Hora</label>
-                </div>
-                <div class="col-12 col-md-2">
-                  <input value="08:00" readonly type="text" class="form-control fon-inputs">
-                </div>
-              </div> 
-              <div class="form-row my-1">
-                <div class="col-12 col-md-4">
-                  <label for="exampleInputEmail1">ID Reporte</label>
-                </div>
-                <div class="col-12 col-md-8">
-                  <input value="09122323" readonly type="text" class="form-control fon-inputs">
-                </div>
-              </div>
-              <div class="form-row my-1">
-                <div class="col-12 col-md-4">
-                  <label for="exampleInputEmail1">Usuario del sistema</label>
-                </div>
-                <div class="col-12 col-md-8">
-                  <input value="Pepito Perez" readonly type="text" class="form-control fon-inputs">
-                </div>
-              </div> 
-            </div>
-            <div class="col-12 col-md-3">
-              <img src="imagenes/usuario.png" width="130px" alt="" class="img-fluid rounded border border-secundary">
-            </div>
-          </div>
-        </form>   
-      </div>
+  <!-- resumen de busqueda riesgo LAFT -->
+  <div class="search-resume-laft">
+    <div class="title">
+      <h2>Resumen de búsqueda</h2>
     </div>
-    <div class="col-12 col-lg-5 mt-2 mt-sm-5 fondo-pie-movil">
-      <div class="row pt-3 w-100 justify-content-center">
-        <img class="logos2" src="imagenes/logo-blanco.png" alt="">
-        <img class="logos2" src="imagenes/logo-blanco2.png" alt="">
-      </div>
-      <div class="row w-100">
-        <div class="col-12 col-md-10 offset-sm-1">
-          <p class="texto-pie text-white">Los resultados de este informe son válidos únicamente el día de su generación. Las
-            consultas realizadas por el motor de búsqueda de XploraTM busca en diferentes fuentes de
-            información públicas y/o fuentes privadas de la institución a las que se tiene acceso. En
-            ningún caso estas fuentes de información son administradas por QUALITA CORP SAS y el
-            uso que se le de a la información aquí contenida es responsabilidad del usuario que realiza
-            la consulta..</p>
-        </div>
-      </div>
+    <div class="title-sub">
+      <h2>Riesgo LAFT</h2>
     </div>
-  </div>
-</div> -->
-<!-- cabecera -->
-<div class="container-fluid cabecera">
-    <div class="row align-items-center h-100">
-        <div class="col-12 col-md-6">
-                <img class="logos" src="imagenes/logo1.png" alt="">
-                <img class="logos" src="imagenes/logo2.png" alt="">
-        </div>
-        <div class="col-12 col-md-6">
-            <h2 class="text-white py-2 px-2 p-md-3 py-lg-4 px-lg-5 m-0 texto-cabecera">REGTECH especializada en prevención
-                de crímenes financieros</h2>
-        </div>
-    </div>
-</div>
-<br>
-<!-- fin Pagina 4 -->
-  <!-- resumen informativo -->
-  <div class="container">
-  <div class="row justify-content-center w-100">
-    <h2 class="text-white d-flex justify-content-around align-items-center py-2 px-4 titulo-resumen-info"> <span class="span">Resumen búsqueda</span><span class="span">Informativas</span> </h2>
-  </div>
-  <div class="row w-100 my-5">
-    <div class="col-12 col-md-4">
-      <div class="row justify-content-center w-100">
-        <h2 class="text-white d-inline py-2 px-4 titulo-listas-info">Listas Colombia</h2>
-      </div>
-      <div class="row px-4">
-        <table class="table table-striped">
-<thead>
-<tr>
-  <th scope="col">#</th>
-  <th scope="col">First</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-  <th scope="row">
-    <form>
-      <input type="checkbox" name="checkbox" id="checkbox-list1"> 
-      <label class="checkbox-verde" for="checkbox-list1"></label>
-    </form>
-  </th>
-  <td>Mark</td>
-</tr>
-<tr>
-  <th scope="row">
-     <form>
-      <input type="checkbox" name="checkbox" id="checkbox-list2"> 
-      <label class="checkbox-verde" for="checkbox-list2"></label>
-    </form>
-  </th>
-  <td>Jacob</td>
-</tr>
-<tr>
-  <th scope="row">
-     <form>
-      <input type="checkbox" name="checkbox" id="checkbox-list3"> 
-      <label class="checkbox-verde" for="checkbox-list3"></label>
-    </form>
-  </th>
-  <td>Larry</td>
-</tr>
-<tr>
-  <th scope="row">
-     <form>
-      <input type="checkbox" name="checkbox" id="checkbox-list4"> 
-      <label class="checkbox-verde" for="checkbox-list4"></label>
-    </form>
-  </th>
-  <td>Mark</td>
-</tr>
-<tr>
-  <th scope="row">
-     <form>
-      <input type="checkbox" name="checkbox" id="checkbox-list5"> 
-      <label class="checkbox-verde" for="checkbox-list5"></label>
-    </form>
-  </th>
-  <td>Jacob</td>
-</tr>
-<tr>
-  <th scope="row">
-     <form>
-      <input type="checkbox" name="checkbox" id="checkbox-list6"> 
-      <label class="checkbox-verde" for="checkbox-list6"></label>
-    </form>
-  </th>
-  <td>Larry</td>
-</tr>
-<tr>
-  <th scope="row">
-     <form>
-      <input type="checkbox" name="checkbox" id="checkbox-list7"> 
-      <label class="checkbox-verde" for="checkbox-list7"></label>
-    </form>
-  </th>
-  <td>Mark</td>
-</tr>
-<tr>
-  <th scope="row">
-     <form>
-      <input type="checkbox" name="checkbox" id="checkbox-list8"> 
-      <label class="checkbox-verde" for="checkbox-list8"></label>
-    </form>
-  </th>
-  <td>Jacob</td>
-</tr>
-<tr>
-  <th scope="row">
-     <form>
-      <input type="checkbox" name="checkbox" id="checkbox-list9"> 
-      <label class="checkbox-verde" for="checkbox-list9"></label>
-    </form>
-  </th>
-  <td>Larry</td>
-</tr>
-<tr>
-  <th scope="row">
-     <form>
-      <input type="checkbox" name="checkbox" id="checkbox-list10"> 
-      <label class="checkbox-verde" for="checkbox-list10"></label>
-    </form>
-  </th>
-  <td>Mark</td>
-</tr>
-<tr>
-  <th scope="row">
-     <form>
-      <input type="checkbox" name="checkbox" id="checkbox-list11"> 
-      <label class="checkbox-verde" for="checkbox-list11"></label>
-    </form>
-  </th>
-  <td>Jacob</td>
-</tr>
-<tr>
-  <th scope="row">
-   <form>
-      <input type="checkbox" name="checkbox" id="checkbox-list12"> 
-      <label class="checkbox-verde" for="checkbox-list12"></label>
-    </form></th>
-  <td>Larry</td>
-</tr>
-<tr>
-  <th scope="row">
-   <form>
-      <input type="checkbox" name="checkbox" id="checkbox-list13"> 
-      <label class="checkbox-verde" for="checkbox-list13"></label>
-    </form></th>
-  <td>Mark</td>
-</tr>
-<tr>
-  <th scope="row">
-   <form>
-      <input type="checkbox" name="checkbox" id="checkbox-list14"> 
-      <label class="checkbox-verde" for="checkbox-list14"></label>
-    </form></th>
-  <td>Jacob</td>
-</tr>
-<tr>
-  <th scope="row">
-   <form>
-      <input type="checkbox" name="checkbox" id="checkbox-list15"> 
-      <label class="checkbox-verde" for="checkbox-list15"></label>
-    </form></th>
-  <td>Jacob</td>
-</tr>
-</tr>
-<tr>
-<th scope="row">
- <form>
-    <input type="checkbox" name="checkbox" id="checkbox-list13"> 
-    <label class="checkbox-verde" for="checkbox-list13"></label>
-  </form></th>
-<td>Mark</td>
-</tr>
-<tr>
-<th scope="row">
- <form>
-    <input type="checkbox" name="checkbox" id="checkbox-list14"> 
-    <label class="checkbox-verde" for="checkbox-list14"></label>
-  </form></th>
-<td>Jacob</td>
-</tr>
-
-</tbody>
-        </table>
-      </div>
-    </div>
-    <div class="col-12 col-md-8">
-      <div class="row justify-content-center w-100">
-        <h2 class="text-white d-inline py-2 px-4 titulo-listas-info">Listas Internacionales</h2>
-      </div>
-      <div class="row px-4">
-        <table class="table table-striped table-secundary">
-          <thead>
-            <tr>
-              <th scope="col">#</th>
-              <th scope="col">First</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <th scope="row">
-                <form>
-      <input type="checkbox" name="checkbox" id="checkbox-list16"> 
-      <label class="checkbox-verde" for="checkbox-list16"></label>
-    </form>
-              </th>
-              <td>Mark</td>
-            </tr>
-            <tr>
-              <th scope="row">
-                <form>
-      <input type="checkbox" name="checkbox" id="checkbox-list17"> 
-      <label class="checkbox-verde" for="checkbox-list17"></label>
-    </form>
-              </th>
-              <td>Jacob</td>
-            </tr>
-            <tr>
-              <th scope="row">
-                <form>
-      <input type="checkbox" name="checkbox" id="checkbox-list18"> 
-      <label class="checkbox-verde" for="checkbox-list18"></label>
-    </form>
-              </th>
-              <td>Larry</td>
-            </tr>
-            <tr>
-              <th scope="row">
-                <form>
-      <input type="checkbox" name="checkbox" id="checkbox-list19"> 
-      <label class="checkbox-verde" for="checkbox-list19"></label>
-    </form>
-              </th>
-              <td>Mark</td>
-            </tr>
-            <tr>
-              <th scope="row">
-                <form>
-      <input type="checkbox" name="checkbox" id="checkbox-list20"> 
-      <label class="checkbox-verde" for="checkbox-list20"></label>
-    </form>
-              </th>
-              <td>Jacob</td>
-            </tr>
-            <tr>
-              <th scope="row">
-                <form>
-      <input type="checkbox" name="checkbox" id="checkbox-list21"> 
-      <label class="checkbox-verde" for="checkbox-list21"></label>
-    </form>
-              </th>
-              <td>Larry</td>
-            </tr>
-            <tr>
-              <th scope="row">
-                <form>
-      <input type="checkbox" name="checkbox" id="checkbox-list22"> 
-      <label class="checkbox-verde" for="checkbox-list22"></label>
-    </form>
-              </th>
-              <td>Mark</td>
-            </tr>
-            <tr>
-              <th scope="row">
-                <form>
-      <input type="checkbox" name="checkbox" id="checkbox-list23"> 
-      <label class="checkbox-verde" for="checkbox-list23"></label>
-    </form>
-              </th>
-              <td>Jacob</td>
-            </tr>
-            <tr>
-              <th scope="row">
-                <form>
-      <input type="checkbox" name="checkbox" id="checkbox-list24"> 
-      <label class="checkbox-verde" for="checkbox-list24"></label>
-    </form>
-              </th>
-              <td>Larry</td>
-            </tr>
-            <tr>
-              <th scope="row">
-                <form>
-      <input type="checkbox" name="checkbox" id="checkbox-list25"> 
-      <label class="checkbox-verde" for="checkbox-list25"></label>
-    </form>
-              </th>
-              <td>Mark</td>
-            </tr>
-            <tr>
-              <th scope="row">
-                <form>
-      <input type="checkbox" name="checkbox" id="checkbox-list26"> 
-      <label class="checkbox-verde" for="checkbox-list26"></label>
-    </form>
-              </th>
-              <td>Jacob</td>
-            </tr>
-            <tr>
-              <th scope="row">
-                <form>
-      <input type="checkbox" name="checkbox" id="checkbox-list27"> 
-      <label class="checkbox-verde" for="checkbox-list27"></label>
-    </form>
-              </th>
-              <td>Larry</td>
-            </tr>
-            <tr>
-              <th scope="row">
-              <form>
-      <input type="checkbox" name="checkbox" id="checkbox-list15"> 
-      <label class="checkbox-verde" for="checkbox-list15"></label>
-    </form></th>
-              <td>Mark</td>
-            </tr>
-            <tr>
-              <th scope="row">
-              <form>
-      <input type="checkbox" name="checkbox" id="checkbox-list15"> 
-      <label class="checkbox-verde" for="checkbox-list15"></label>
-    </form></th>
-              <td>Jacob</td>
-            </tr>
-            <tr>
-              <th scope="row">
-              <form>
-      <input type="checkbox" name="checkbox" id="checkbox-list15"> 
-      <label class="checkbox-verde" for="checkbox-list15"></label>
-    </form></th>
-              <td>Jacob</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-    </div>
-  </div>
-  </div>
-<!-- fin Pagina 4 -->
-<!-- Pie -->
-<!--<div class="pie">
-  <div class="row w-100">
-    <div class="col-12 offset-lg-1 col-lg-6">
-      <div class="row justify-content-center w-100">
-        <h2 class="text-white d-inline py-2 px-4 titulo-pie">Usuario y entidad que realiza la consulta:</h2>
-      </div>
-      <div class="row w-100">
-        <form class="my-2 text-center w-100">
-          <div class="form-row">
-            <div class="col-12 col-md-9">
-              <div class="form-row my-1">
-                <div class="col-12 col-md-4">
-                  <label for="exampleInputEmail1">Fecha generación</label>
-                </div>
-                <div class="col-12 col-md-5">
-                  <input value="24-04-2020" readonly type="text" class="form-control fon-inputs">
-                </div>
-                <div class="col-12 col-md-1">
-                  <label for="exampleInputEmail1">Hora</label>
-                </div>
-                <div class="col-12 col-md-2">
-                  <input value="08:00" readonly type="text" class="form-control fon-inputs">
-                </div>
-              </div> 
-              <div class="form-row my-1">
-                <div class="col-12 col-md-4">
-                  <label for="exampleInputEmail1">ID Reporte</label>
-                </div>
-                <div class="col-12 col-md-8">
-                  <input value="09122323" readonly type="text" class="form-control fon-inputs">
-                </div>
-              </div>
-              <div class="form-row my-1">
-                <div class="col-12 col-md-4">
-                  <label for="exampleInputEmail1">Usuario del sistema</label>
-                </div>
-                <div class="col-12 col-md-8">
-                  <input value="Pepito Perez" readonly type="text" class="form-control fon-inputs">
-                </div>
-              </div> 
-            </div>
-            <div class="col-12 col-md-3">
-              <img src="imagenes/usuario.png" width="130px" alt="" class="img-fluid rounded border border-secundary">
-            </div>
-          </div>
-        </form>   
-      </div>
-    </div>
-    <div class="col-12 col-lg-5 mt-2 mt-sm-5 fondo-pie-movil">
-      <div class="row pt-3 w-100 justify-content-center">
-        <img class="logos2" src="imagenes/logo-blanco.png" alt="">
-        <img class="logos2" src="imagenes/logo-blanco2.png" alt="">
-      </div>
-      <div class="row w-100">
-        <div class="col-12 col-md-10 offset-sm-1">
-          <p class="texto-pie text-white">Los resultados de este informe son válidos únicamente el día de su generación. Las
-            consultas realizadas por el motor de búsqueda de XploraTM busca en diferentes fuentes de
-            información públicas y/o fuentes privadas de la institución a las que se tiene acceso. En
-            ningún caso estas fuentes de información son administradas por QUALITA CORP SAS y el
-            uso que se le de a la información aquí contenida es responsabilidad del usuario que realiza
-            la consulta..</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>-->
-<!-- cabecera -->
-<div class="container-fluid cabecera">
-<div class="row align-items-center h-100">
-    <div class="col-12 col-md-6">
-            <img class="logos" src="imagenes/logo1.png" alt="">
-            <img class="logos" src="imagenes/logo2.png" alt="">
-    </div>
-    <div class="col-12 col-md-6">
-        <h2 class="text-white py-2 px-2 p-md-3 py-lg-4 px-lg-5 m-0 texto-cabecera">REGTECH especializada en prevención
-            de crímenes financieros</h2>
-    </div>
-</div>
-</div>
-<!-- Pagina 5 -->
-<!-- noticias -->
-<div class="container">
-    <div class="row justify-content-center w-100">
-      <h2 class="text-white d-flex justify-content-around align-items-center py-2 px-4 titulo-resumen-info"> <span class="span">Resumen búsqueda</span><span class="span">Informativas</span> </h2>
-    </div>
-    <div class="row w-100 my-2 my-md-5">
-      <div class="col-12 col-md-4">
-        <div class="row justify-content-center w-100">
-          <h2 class="text-white d-inline py-2 px-4 px-md-2 px-lg-4 titulo-consulta">Propias y proveedores</h2>
-        </div>
-        <div class="row px-4">
-          <table class="table table-striped">
-<thead>
-  <tr>
-    <th scope="col">#</th>
-    <th scope="col">First</th>
-  </tr>
-</thead>
-<tbody>
-  <tr>
-    <th scope="row">
-      <form>
-      <input type="checkbox" name="checkbox" id="checkbox-azul1"> 
-      <label class="checkbox-azul" for="checkbox-azul1"></label>
-    </form>
-    </th>
-    <td>Mark</td>
-  </tr>
-  <tr>
-    <th scope="row">
-      <form>
-      <input type="checkbox" name="checkbox" id="checkbox-azul2"> 
-      <label class="checkbox-azul" for="checkbox-azul2"></label>
-    </form>
-    </th>
-    <td>Jacob</td>
-  </tr>
-  <tr>
-    <th scope="row">
-      <form>
-      <input type="checkbox" name="checkbox" id="checkbox-azul3"> 
-      <label class="checkbox-azul" for="checkbox-azul3"></label>
-    </form>
-    </th>
-    <td>Larry</td>
-  </tr>
-  <tr>
-    <th scope="row">
-      <form>
-      <input type="checkbox" name="checkbox" id="checkbox-azul4"> 
-      <label class="checkbox-azul" for="checkbox-azul4"></label>
-    </form>
-    </th>
-    <td>Mark</td>
-  </tr>
-  <tr>
-    <th scope="row">
-      <form>
-      <input type="checkbox" name="checkbox" id="checkbox-azul5"> 
-      <label class="checkbox-azul" for="checkbox-azul5"></label>
-    </form>
-    </th>
-    <td>Jacob</td>
-  </tr>
-  <tr>
-    <th scope="row">
-      <form>
-      <input type="checkbox" name="checkbox" id="checkbox-azul6"> 
-      <label class="checkbox-azul" for="checkbox-azul6"></label>
-    </form>
-    </th>
-    <td>Larry</td>
-  </tr>
-  <tr>
-    <th scope="row">
-      <form>
-      <input type="checkbox" name="checkbox" id="checkbox-azul7"> 
-      <label class="checkbox-azul" for="checkbox-azul7"></label>
-    </form>
-    </th>
-    <td>Mark</td>
-  </tr>
-  <tr>
-    <th scope="row">
-      <form>
-      <input type="checkbox" name="checkbox" id="checkbox-azul8"> 
-      <label class="checkbox-azul" for="checkbox-azul8"></label>
-    </form>
-    </th>
-    <td>Jacob</td>
-  </tr>
-  <tr>
-    <th scope="row">
-      <form>
-      <input type="checkbox" name="checkbox" id="checkbox-azul6"> 
-      <label class="checkbox-azul" for="checkbox-azul6"></label>
-    </form>
-    </th>
-    <td>Larry</td>
-  </tr>
-  <tr>
-    <th scope="row">
-      <form>
-      <input type="checkbox" name="checkbox" id="checkbox-azul7"> 
-      <label class="checkbox-azul" for="checkbox-azul7"></label>
-    </form>
-    </th>
-    <td>Mark</td>
-  </tr>
-  <tr>
-    <th scope="row">
-      <form>
-      <input type="checkbox" name="checkbox" id="checkbox-azul8"> 
-      <label class="checkbox-azul" for="checkbox-azul8"></label>
-    </form>
-    </th>
-    <td>Jacob</td>
-  </tr>
-  <tr>
-    <th scope="row">
-      <form>
-      <input type="checkbox" name="checkbox" id="checkbox-azul6"> 
-      <label class="checkbox-azul" for="checkbox-azul6"></label>
-    </form>
-    </th>
-    <td>Larry</td>
-  </tr>
-  <tr>
-    <th scope="row">
-      <form>
-      <input type="checkbox" name="checkbox" id="checkbox-azul7"> 
-      <label class="checkbox-azul" for="checkbox-azul7"></label>
-    </form>
-    </th>
-    <td>Mark</td>
-  </tr>
-  <tr>
-    <th scope="row">
-      <form>
-      <input type="checkbox" name="checkbox" id="checkbox-azul8"> 
-      <label class="checkbox-azul" for="checkbox-azul8"></label>
-    </form>
-    </th>
-    <td>Jacob</td>
-  </tr>
-</tbody>
-          </table>
-        </div>
-      </div>
-      <div class="col-12 col-md-8">
-        <div class="row w-100">
-          <div class="col-12 col-md-6">
-              <div class="row justify-content-center w-100">
-                <h2 class="text-white d-inline py-1 px-5 titulo-consulta">Noticias</h2>
-              </div>
-              <div class="px-4 py4 rounded border border-secondary" style="height:200px;">
-                  <img src="imagenes/logolistas3.svg" style="width:20px;"alt="">
-              </div>
-          </div>
-          <div class="col-12 col-md-6 col-lg-4 py-2 py-lg-5 my-2 my-md-5">
-            <button class="btn btn-light rounded rounded-pill border border-secondary labels my-1"><img src="imagenes/logolistas3.svg" style="width:20px;"alt=""> Búsqueda realizada sin coincidencia</button>
-            <button class="btn btn-light rounded rounded-pill border border-secondary labels my-1"><img src="imagenes/logolistas3.svg" style="width:20px;"alt=""> Búsqueda con coincidencia encontrada</button>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="row justify-content-center w-100">
-      <h2 class="text-white d-inline py-2 px-4 titulo-pie">Detalle de coincidencias</h2>
-    </div>
-    <div class="row w-100 justify-content-center">
-      <p class="text-center">Nota: el detalle de coincidencias solo expande listas con coincidencias identificadas con</p><img src="imagenes/logolistas3.svg" alt="">
-    </div>
-    <div class="w-100 my-2 my-md-5">
-      <p class="text-center mb-0">
-        <img src="imagenes/flechabajo.svg" alt="">
-      </p>
-      <p class="text-center mb-0">
-        <img src="imagenes/flechabajo.svg" alt="">
-      </p>
-      <p class="text-center mb-0">
-        <img src="imagenes/flechabajo.svg" alt="">
-      </p>
-    </div>
-</div>
-<br>
-<!-- fin Pagina 5 -->
-<!-- Pie -->
-<!--<div class="pie">
-    <div class="row w-100">
-      <div class="col-12 offset-lg-1 col-lg-6">
-        <div class="row justify-content-center w-100">
-          <h2 class="text-white d-inline py-2 px-4 titulo-pie">Usuario y entidad que realiza la consulta:</h2>
-        </div>
-        <div class="row w-100">
-          <form class="my-2 text-center">
-            <div class="form-row">
-              <div class="col-12 col-md-9">
-                <div class="form-row my-1">
-                  <div class="col-12 col-md-4">
-                    <label for="exampleInputEmail1">Fecha generación</label>
-                  </div>
-                  <div class="col-12 col-md-5">
-                    <input type="text" class="form-control fon-inputs">
-                  </div>
-                  <div class="col-12 col-md-1">
-                    <label for="exampleInputEmail1">Hora</label>
-                  </div>
-                  <div class="col-12 col-md-2">
-                    <input type="text" class="form-control fon-inputs">
-                  </div>
-                </div> 
-                <div class="form-row my-1">
-                  <div class="col-12 col-md-3">
-                    <label for="exampleInputEmail1">ID Reporte</label>
-                  </div>
-                  <div class="col-12 col-md-9">
-                    <input type="text" class="form-control fon-inputs">
-                  </div>
-                </div>
-                <div class="form-row my-1">
-                  <div class="col-12 col-md-4">
-                    <label for="exampleInputEmail1">Usuario delsistema</label>
-                  </div>
-                  <div class="col-12 col-md-8">
-                    <input type="text" class="form-control fon-inputs">
-                  </div>
-                </div> 
-              </div>
-              <div class="col-12 col-md-3">
-                <img src="imagenes/usuario.png" width="130px" alt="" class="img-fluid rounded border border-secundary">
-              </div>
-            </div>
-          </form>   
-        </div>
-      </div>
-      <div class="col-12 col-lg-5 mt-2 mt-sm-5 fondo-pie-movil">
-        <div class="row pt-3 w-100 justify-content-center">
-          <img class="logos2" src="imagenes/logo-blanco.png" alt="">
-          <img class="logos2" src="imagenes/logo-blanco2.png" alt="">
-        </div>
-        <div class="row w-100">
-          <div class="col-12 col-md-10 offset-sm-1">
-            <p class="texto-pie text-white">Los resultados de este informe son válidos únicamente el día de su generación. Las
-              consultas realizadas por el motor de búsqueda de XploraTM busca en diferentes fuentes de
-              información públicas y/o fuentes privadas de la institución a las que se tiene acceso. En
-              ningún caso estas fuentes de información son administradas por QUALITA CORP SAS y el
-              uso que se le de a la información aquí contenida es responsabilidad del usuario que realiza
-              la consulta..</p>
-          </div>
-        </div>
-      </div>
-    </div>
-</div>-->
-  <!-- cabecera -->
-  <div class="container-fluid cabecera">
-    <div class="row align-items-center h-100">
-        <div class="col-12 col-md-6">
-                <img class="logos" src="imagenes/logo1.png" alt="">
-                <img class="logos" src="imagenes/logo2.png" alt="">
-        </div>
-        <div class="col-12 col-md-6">
-            <h2 class="text-white py-2 px-2 p-md-3 py-lg-4 px-lg-5 m-0 texto-cabecera">REGTECH especializada en prevención
-                de crímenes financieros</h2>
-        </div>
-    </div>
-  </div>
-  <!-- Pagina 6 -->
-  <!-- tablas -->
-  <div class="m-5">
-    <div class="table-responsive-md">
-      <table class="table table-striped">
-        <thead class="bgcolor">
-          <tr class="text-white bgcolor texto-print">
-            <th scope="col">score</th>
-            <th scope="col">Nombre/Razon Social</th>
-            <th scope="col">lista</th>
-            <th scope="col">Tipo</th>
-            <th scope="col">Algoritmo</th>
-            <th scope="col">Observacion</th>
+    <div class="container-table">
+      <table>
+        <thead>
+          <tr>
+            <th>
+              <p><span>Lista Colombiana</span></p>
+            </th>
+            <th>
+              <p><span>Lista Internacional</span></p>
+            </th>
+          </tr>
+          <tr>
+            <th>Title column</th>
+            <th>Title column</th>
           </tr>
         </thead>
         <tbody>
           <tr>
-            <th scope="row">
-              <form>
-      <input type="checkbox" name="checkbox" id="checkbox-azul20"> 
-      <label class="checkbox-azul" for="checkbox-azul20"></label>
-    </form>
-            </th>
-            <td>Mark</td>
-            <td>Otto</td>
-            <td>@mdo</td>
-            <td>@mdo</td>
-            <td>@mdo</td>
+            <td>Alfreds Futterkiste</td>
+            <td>Maria Anders</td>
           </tr>
           <tr>
-            <th scope="row">
-              <form>
-      <input type="checkbox" name="checkbox" id="checkbox-azul21"> 
-      <label class="checkbox-azul" for="checkbox-azul21"></label>
-    </form>
-            </th>
-            <td>Jacob</td>
-            <td>Thornton</td>
-            <td>@fat</td>
-            <td>@mdo</td>
-            <td>@mdo</td>
+            <td>Alfreds Futterkiste</td>
+            <td>Maria Anders</td>
           </tr>
           <tr>
-            <th scope="row">
-              <form>
-      <input type="checkbox" name="checkbox" id="checkbox-azul8"> 
-      <label class="checkbox-azul" for="checkbox-azul8"></label>
-    </form>
-            </th>
-            <td>Larry</td>
-            <td>the Bird</td>
-            <td>@twitter</td>
-            <td>@mdo</td>
-            <td>@mdo</td>
+            <td>Alfreds Futterkiste</td>
+            <td>Maria Anders</td>
           </tr>
           <tr>
-            <th scope="row">
-              <form>
-      <input type="checkbox" name="checkbox" id="checkbox-azul8"> 
-      <label class="checkbox-azul" for="checkbox-azul8"></label>
-    </form>
-            </th>
-            <td>Larry</td>
-            <td>the Bird</td>
-            <td>@twitter</td>
-            <td>@mdo</td>
-            <td>@mdo</td>
+            <td>Alfreds Futterkiste</td>
+            <td>Maria Anders</td>
           </tr>
           <tr>
-            <th scope="row">
-              <form>
-      <input type="checkbox" name="checkbox" id="checkbox-azul8"> 
-      <label class="checkbox-azul" for="checkbox-azul8"></label>
-    </form>
-            </th>
-            <td>Larry</td>
-            <td>the Bird</td>
-            <td>@twitter</td>
-            <td>@mdo</td>
-            <td>@mdo</td>
+            <td>Alfreds Futterkiste</td>
+            <td>Maria Anders</td>
           </tr>
           <tr>
-            <th scope="row">
-              <form>
-      <input type="checkbox" name="checkbox" id="checkbox-azul8"> 
-      <label class="checkbox-azul" for="checkbox-azul8"></label>
-    </form>
-            </th>
-            <td>Larry</td>
-            <td>the Bird</td>
-            <td>@twitter</td>
-            <td>@mdo</td>
-            <td>@mdo</td>
+            <td>Alfreds Futterkiste</td>
+            <td>Maria Anders</td>
           </tr>
           <tr>
-            <th scope="row">
-              <form>
-      <input type="checkbox" name="checkbox" id="checkbox-azul8"> 
-      <label class="checkbox-azul" for="checkbox-azul8"></label>
-    </form>
-            </th>
-            <td>Larry</td>
-            <td>the Bird</td>
-            <td>@twitter</td>
-            <td>@mdo</td>
-            <td>@mdo</td>
+            <td>Alfreds Futterkiste</td>
+            <td>Maria Anders</td>
           </tr>
           <tr>
-            <th scope="row">
-              <form>
-      <input type="checkbox" name="checkbox" id="checkbox-azul8"> 
-      <label class="checkbox-azul" for="checkbox-azul8"></label>
-    </form>
-            </th>
-            <td>Larry</td>
-            <td>the Bird</td>
-            <td>@twitter</td>
-            <td>@mdo</td>
-            <td>@mdo</td>
+            <td>Alfreds Futterkiste</td>
+            <td>Maria Anders</td>
           </tr>
           <tr>
-            <th scope="row">
-              <form>
-      <input type="checkbox" name="checkbox" id="checkbox-azul8"> 
-      <label class="checkbox-azul" for="checkbox-azul8"></label>
-    </form>
-            </th>
-            <td>Larry</td>
-            <td>the Bird</td>
-            <td>@twitter</td>
-            <td>@mdo</td>
-            <td>@mdo</td>
+            <td>Alfreds Futterkiste</td>
+            <td>Maria Anders</td>
           </tr>
-          <tr>
-            <th scope="row">
-              <form>
-      <input type="checkbox" name="checkbox" id="checkbox-azul8"> 
-      <label class="checkbox-azul" for="checkbox-azul8"></label>
-    </form>
-            </th>
-            <td>Larry</td>
-            <td>the Bird</td>
-            <td>@twitter</td>
-            <td>@mdo</td>
-            <td>@mdo</td>
-          </tr>
-          <tr>
-            <th scope="row">
-              <form>
-      <input type="checkbox" name="checkbox" id="checkbox-azul8"> 
-      <label class="checkbox-azul" for="checkbox-azul8"></label>
-    </form>
-            </th>
-            <td>Larry</td>
-            <td>the Bird</td>
-            <td>@twitter</td>
-            <td>@mdo</td>
-            <td>@mdo</td>
-          </tr>
-          <tr>
-            <th scope="row">
-              <form>
-      <input type="checkbox" name="checkbox" id="checkbox-azul8"> 
-      <label class="checkbox-azul" for="checkbox-azul8"></label>
-    </form>
-            </th>
-            <td>Larry</td>
-            <td>the Bird</td>
-            <td>@twitter</td>
-            <td>@mdo</td>
-            <td>@mdo</td>
-          </tr>
-          
         </tbody>
       </table>
     </div>
-   
   </div>
-  <!-- fin Pagina 6 -->
-<!-- Pie -->
-<div class="pie">
-  <div class="row w-100">
-    <div class="col-12 offset-lg-1 col-lg-6">
-      <div class="row justify-content-center w-100">
-        <h2 class="text-white d-inline py-2 px-4 titulo-pie">Usuario y entidad que realiza la consulta:</h2>
-      </div>
-      <div class="row w-100">
-        <form class="my-2 text-center">
-          <div class="form-row">
-            <div class="col-12 col-md-9">
-              <div class="form-row my-1">
-                <div class="col-12 col-md-4">
-                  <label for="exampleInputEmail1">Fecha generación</label>
-                </div>
-                <div class="col-12 col-md-5">
-                  <input type="text" class="form-control fon-inputs">
-                </div>
-                <div class="col-12 col-md-1">
-                  <label for="exampleInputEmail1">Hora</label>
-                </div>
-                <div class="col-12 col-md-2">
-                  <input type="text" class="form-control fon-inputs">
-                </div>
-              </div> 
-              <div class="form-row my-1">
-                <div class="col-12 col-md-3">
-                  <label for="exampleInputEmail1">ID Reporte</label>
-                </div>
-                <div class="col-12 col-md-9">
-                  <input type="text" class="form-control fon-inputs">
-                </div>
-              </div>
-              <div class="form-row my-1">
-                <div class="col-12 col-md-4">
-                  <label for="exampleInputEmail1">Usuario delsistema</label>
-                </div>
-                <div class="col-12 col-md-8">
-                  <input type="text" class="form-control fon-inputs">
-                </div>
-              </div> 
-            </div>
-            <div class="col-12 col-md-3">
-              <img src="imagenes/usuario.png" width="130px" alt="" class="img-fluid rounded border border-secundary">
-            </div>
-          </div>
-        </form>   
-      </div>
+  <!-- End Resumen de búsqueda -->
+
+  <!-- resumen de busqueda informativa -->
+  <div class="search-resume-informative">
+    <div class="title">
+      <h2>Resumen de búsqueda</h2>
     </div>
-    <div class="col-12 col-lg-5 mt-2 mt-sm-5 fondo-pie-movil">
-      <div class="row pt-3 w-100 justify-content-center">
-        <img class="logos2" src="imagenes/logo-blanco.png" alt="">
-        <img class="logos2" src="imagenes/logo-blanco2.png" alt="">
-      </div>
-      <div class="row w-100">
-        <div class="col-12 col-md-10 offset-sm-1">
-          <p class="texto-pie text-white">Los resultados de este informe son válidos únicamente el día de su generación. Las
-            consultas realizadas por el motor de búsqueda de XploraTM busca en diferentes fuentes de
-            información públicas y/o fuentes privadas de la institución a las que se tiene acceso. En
-            ningún caso estas fuentes de información son administradas por QUALITA CORP SAS y el
-            uso que se le de a la información aquí contenida es responsabilidad del usuario que realiza
-            la consulta..</p>
-        </div>
-      </div>
+    <div class="title-sub">
+      <h2>Informativa</h2>
+    </div>
+    <div class="container-table">
+      <table>
+        <thead>
+          <tr>
+            <th>
+              <p><span>Lista Colombiana</span></p>
+            </th>
+            <th>
+              <p><span>Lista Internacional</span></p>
+            </th>
+          </tr>
+          <tr>
+            <th>Title column</th>
+            <th>Title column</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Alfreds Futterkiste</td>
+            <td>Maria Anders</td>
+          </tr>
+          <tr>
+            <td>Alfreds Futterkiste</td>
+            <td>Maria Anders</td>
+          </tr>
+          <tr>
+            <td>Alfreds Futterkiste</td>
+            <td>Maria Anders</td>
+          </tr>
+          <tr>
+            <td>Alfreds Futterkiste</td>
+            <td>Maria Anders</td>
+          </tr>
+          <tr>
+            <td>Alfreds Futterkiste</td>
+            <td>Maria Anders</td>
+          </tr>
+          <tr>
+            <td>Alfreds Futterkiste</td>
+            <td>Maria Anders</td>
+          </tr>
+          <tr>
+            <td>Alfreds Futterkiste</td>
+            <td>Maria Anders</td>
+          </tr>
+          <tr>
+            <td>Alfreds Futterkiste</td>
+            <td>Maria Anders</td>
+          </tr>
+          <tr>
+            <td>Alfreds Futterkiste</td>
+            <td>Maria Anders</td>
+          </tr>
+        </tbody>
+      </table>
     </div>
   </div>
-</div>
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  <!-- End Resumen de búsqueda informativa -->
+
+  <!-- Consult User -->
+  <div class="user-consult">
+    <div class="user-consult-col">
+      <div class="form-consult-title mb-4">
+        <h2>Usuario ó entidad que realiza la consulta:</h2>
+      </div>
+      <form class="form-user-consult">
+        <label for="userConsultDate">
+          <span>Fecha</span>
+          <input type="text" id="userConsultDate" placeholder="24-04-2020">
+        </label>
+        <label for="userConsultHour">
+          <span>Hora</span>
+          <input type="text" id="userConsultHour" placeholder="00:00">
+        </label>
+        <label for="userConsultIdReport">
+          <span>ID del reporte</span>
+          <input type="text" id="userConsultIdReport" placeholder="012345">
+        </label>
+        <label for="userConsultName">
+          <span>Usuario</span>
+          <input type="text" id="userConsultName" placeholder="Nombre">
+        </label>
+      </form>
+    </div>
+    <div class="user-consult-col">
+      <div>
+        <img class="logos" src="imagenes/logo-blanco.png" alt="">
+        <img class="logos" src="imagenes/logo-blanco2.png" alt="">
+      </div>
+      <p>
+        Los resultados de este informe son válidos únicamente el día de su generación. Las
+        consultas realizadas por el motor de búsqueda de XploraTM busca en diferentes fuentes de
+        información públicas y/o fuentes privadas de la institución a las que se tiene acceso. En
+        ningún caso estas fuentes de información son administradas por QUALITA CORP SAS y el
+        uso que se le de a la información aquí contenida es responsabilidad del usuario que realiza
+        la consulta..
+      </p>
+    </div>
+  </div>
+<!-- End Consult User -->
   </body>
 </html>
