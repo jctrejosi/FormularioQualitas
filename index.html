@@ -5,9 +5,11 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Formulario</title>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <title>Formulario</title>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.8.0/chart.min.js"></script>
+    <script type="text/javascript" src="index.js"></script>
     <link rel="stylesheet" href="main.css">
   </head>
   <body>
@@ -27,7 +29,7 @@
         <div class="container-title-informe">
             <div class="titulo-validacion">
                 <img class="titulo-validacion-logo" src="imagenes/logo4.svg" alt="">
-                <p class="ml-3 text-white text-wrap">Informe de Validación</p>
+                <p>Informe de Validación</p>
             </div>
             <div class="logo-user-validacion">
               <img src="imagenes/logo3.png" alt="">
@@ -62,20 +64,21 @@
       <!-- End Form Consult -->
     </div>
 
-  <!-- Buttons Type -->
-  <div class="buttons-type">
-    <h3>Tipos de botones</h3>
-    <div class="btn-circle btn-circle--active">
-      <span>Activo</span>
-    </div>
-    <div class="btn-circle btn-circle--inactive">
-      <span>Inactivo</span>
-    </div>
-  </div>
-  <!-- End Buttons Type -->
-
 <!-- basic data -->
   <div class="container-basic-data">
+    <div class="container-basic-data-bg-filter"></div>
+    <img class="container-basic-data-bg" src="imagenes/bg-consult2.jpg" alt="">
+    <!-- Buttons Type -->
+      <div class="buttons-type">
+        <h3>Tipos de botones</h3>
+        <div class="btn-circle btn-circle--active">
+          <span>Activo</span>
+        </div>
+        <div class="btn-circle btn-circle--inactive">
+          <span>Inactivo</span>
+        </div>
+      </div>
+    <!-- End Buttons Type -->
     <div class="title">
       <h2>Datos básicos de la consulta</h2>
     </div>
@@ -85,40 +88,19 @@
       <h3 class="subtitle-underlined">Porcentaje de coincidencia</h3>
       <div class="container-basic-data-graphs">
         <div class="container-basic-data-graph">
-          <div class="progress blue">
-            <span class="progress-left">
-              <span class="progress-bar"></span>
-            </span>
-            <span class="progress-right">
-              <span class="progress-bar"></span>
-            </span>
-            <div class="progress-value btn-circle--active">90%</div>
-          </div>
-          <span>Value</span>
+          <canvas class="chart" data-percent="30"></canvas>
+          <p>30%</p>
+          <span>value</span>
         </div>
         <div class="container-basic-data-graph">
-          <div class="progress blue">
-            <span class="progress-left">
-              <span class="progress-bar"></span>
-            </span>
-            <span class="progress-right">
-              <span class="progress-bar"></span>
-            </span>
-            <div class="progress-value btn-circle--active">90%</div>
-          </div>
-          <span>Value</span>
+          <canvas class="chart" data-percent="20"></canvas>
+          <p>20%</p>
+          <span>value</span>
         </div>
         <div class="container-basic-data-graph">
-          <div class="progress blue">
-            <span class="progress-left">
-              <span class="progress-bar"></span>
-            </span>
-            <span class="progress-right">
-              <span class="progress-bar"></span>
-            </span>
-            <div class="progress-value btn-circle--inactive">90%</div>
-          </div>
-          <span>Value</span>
+          <canvas class="chart" data-percent="60"></canvas>
+          <p>60%</p>
+          <span>value</span>
         </div>
       </div>
     </div>
@@ -345,5 +327,34 @@
     </div>
   </div>
 <!-- End Consult User -->
+<script>
+  const ctx = document.querySelectorAll('.chart');
+
+  ctx.forEach((e) => {
+    var newCtx = e.getContext("2d");
+
+    var percent = Number(e.dataset.percent)
+    var remnant = 100 - Number(e.dataset.percent)
+
+    new Chart(newCtx, {
+      type: 'doughnut',
+      data: {
+        datasets: [{
+          data: [percent, remnant],
+          backgroundColor: [
+            '#5980c9',
+            'rgba(255, 255, 255, .6)'
+          ],
+          borderColor: [
+            'transparent'
+          ]
+        }],
+      },
+      options: {
+        cutoutPercentage: 90
+      }
+    });
+  })
+</script>
   </body>
 </html>

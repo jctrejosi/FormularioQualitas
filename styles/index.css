@@ -7,6 +7,17 @@
 	--green-gradient: linear-gradient(#45d37b,#07a042);
 }
 
+body {
+	margin: 0;
+	font-family: "Source Sans Pro", Arial, Helvetica, sans-serif;	
+}
+
+canvas{
+  height: 9rem !important;
+	margin: 2rem;
+  width: 9rem !important;
+}
+
 .btn-print {
 	align-items: center;
 	background: var(--corporate);
@@ -32,7 +43,7 @@
 	color: white;
 }
 
-.header{
+.header {
 	padding-top: 3rem;
 	display: flex;
 	width: 100%;
@@ -143,8 +154,8 @@
 }
 
 .titulo-validacion-logo {
-	width: 5rem;
-	height: 5rem;
+	width: 3rem;
+	height: 3rem;
 }
 
 .titulo-validacion::before {
@@ -161,6 +172,8 @@
 }
 
 .titulo-validacion p {
+	margin-left: 1rem;
+	color: white;
 	font-size: 1.3rem;
 	line-height: 1;
 	font-weight: bold;
@@ -327,14 +340,33 @@
 	background: linear-gradient(#868686,#575757);
 }
 
+.container-basic-data-bg {
+	height: 100%;
+	left: 0;
+	object-fit: cover;
+	position: absolute;
+	top: 0;
+	width: 100%;
+	z-index: -2;
+	opacity: .7;
+}
+
+.container-basic-data-bg-filter {
+	background: var(--blue-gradient);
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	opacity: .2;
+	z-index: -1;
+}
+
 .container-basic-data {
 	align-items: center;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	background: linear-gradient(rgba(162, 211, 240, 0.3),rgba(121, 130, 255, 0.3)), url(/imagenes/bg-consult2.jpg);
-	background-size: cover;
 	padding: 2rem;
+	position: relative;
 }
 
 .container-basic-data-averages {
@@ -375,12 +407,21 @@
 	align-items: center;
 	display: flex;
 	flex-direction: column;
+	position: relative;
 }
 
 .container-basic-data-graph span {
 	color: var(--blue);
-	font-size: 1.4rem;
+	font-size: 1.2rem;
 	font-weight: 600;
+}
+
+.container-basic-data-graph p {
+	color: var(--blue);
+	font-size: 1.1rem;
+	font-weight: 600;
+	position: absolute;
+	top: 6rem;
 }
 
 .container-basic-data-fields,
@@ -417,110 +458,6 @@
 	height: 1.2rem;
 	width: 1.2rem;
 	margin-right: .3rem;
-}
-
-/* ------- progess bar circle -------- */
-.progress {
-  width: 150px;
-  height: 150px;
-  float: left;
-  line-height: 12rem;
-  background: none;
-  margin: 20px;
-  box-shadow: none;
-  position: relative;
-}
-
-.progress:after {
-  content: "";
-  width: 100%;
-  height: 100%;
-  border-radius: 50%;
-  border: 1rem solid #fff;
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-
-.progress > span {
-  width: 50%;
-  height: 100%;
-  overflow: hidden;
-  position: absolute;
-  top: 0;
-  z-index: 1;
-}
-
-.progress .progress-left {
-  left: 0;
-}
-
-.progress .progress-bar {
-  width: 100%;
-  height: 100%;
-  background: none;
-  border-width: 12px;
-  border-style: solid;
-  position: absolute;
-  top: 0;
-}
-
-.progress .progress-left .progress-bar {
-  left: 100%;
-  border-top-right-radius: 80px;
-  border-bottom-right-radius: 80px;
-  border-left: 0;
-  -webkit-transform-origin: center left;
-  transform-origin: center left;
-}
-
-.progress .progress-right {
-  right: 0;
-}
-
-.progress .progress-right .progress-bar {
-  left: -100%;
-  border-top-left-radius: 80px;
-  border-bottom-left-radius: 80px;
-  border-right: 0;
-  transform-origin: center right;
-  animation: loading-1 1s linear forwards;
-}
-
-.progress .progress-value {
-	align-items: center;
-	display: flex;
-	font-weight: 500;
-	justify-content: center;
-  border-radius: 50%;
-  color: #fff;
-  font-size: 1.8rem;
-  height: 90%;
-  left: 5%;
-  position: absolute;
-  text-align: center;
-  top: 5%;
-  width: 90%;
-}
-
-.progress.blue .progress-bar {
-  border-color: #049dff;
-}
-
-.progress.blue .progress-left .progress-bar {
-  animation: loading-2 1s linear forwards 1s;
-}
-
-.progress.yellow .progress-bar {
-  border-color: #fdba04;
-}
-
-.progress.yellow .progress-right .progress-bar {
-  animation: loading-3 1s linear forwards;
-}
-
-.progress.yellow .progress-left .progress-bar {
-  animation: none;
 }
 
 .search-resume-laft,

@@ -1,0 +1,31 @@
+@media print {
+  .btn-print {
+    display: none;
+  }
+  .header-bg {
+    display: flex;
+  }
+
+  .container-table table tr:nth-child(2) th {
+    box-shadow: .1rem .1rem .1rem rgba(0, 0, 0, .2);
+  }
+
+  .titulo-validacion p,
+  .header-text h2,
+  .titulo-validacion,
+  .titulo-validacion::before,
+  .form-consult-title,
+  .form-consult-title > h2,
+  .title,
+  .title > h2,
+  .title-sub,
+  .container-basic-data-bg-filter,
+  .container-table table tr:first-child th p,
+  .search-resume-informative .container-table table tr:first-child th p,
+  .container-table table tr:nth-child(2) th,
+  .form-user-consult label input,
+  .user-consult-col:nth-child(2),
+  .user-consult-col:nth-child(2)::before {
+    print-color-adjust: exact;
+  }
+}
