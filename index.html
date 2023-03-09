@@ -286,47 +286,106 @@
   </div>
   <!-- End Resumen de búsqueda informativa -->
 
+  <!-- Resume -->
+    <div class="container-table-resume">
+      <table>
+        <thead>
+          <tr>
+            <th>Puntaje</th>
+            <th>Nombre/Razón social</th>
+            <th>Lista</th>
+            <th>Tipo</th>
+            <th>Algoritmo</th>
+            <th>Observación</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>32</td>
+            <td>Maria Anders</td>
+            <td>Otto</td>
+            <td>@twitter</td>
+            <td>@mdo</td>
+            <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita, sit.</td>
+          </tr>
+          <tr>
+            <td>32</td>
+            <td>Maria Anders</td>
+            <td>Otto</td>
+            <td>@twitter</td>
+            <td>@mdo</td>
+            <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita, sit.</td>
+          </tr>
+          <tr>
+            <td>32</td>
+            <td>Maria Anders</td>
+            <td>Otto</td>
+            <td>@twitter</td>
+            <td>@mdo</td>
+            <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita, sit.</td>
+          </tr>
+          <tr>
+            <td>32</td>
+            <td>Maria Anders</td>
+            <td>Otto</td>
+            <td>@twitter</td>
+            <td>@mdo</td>
+            <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita, sit.</td>
+          </tr>
+          <tr>
+            <td>32</td>
+            <td>Maria Anders</td>
+            <td>Otto</td>
+            <td>@twitter</td>
+            <td>@mdo</td>
+            <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita, sit.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  <!-- End Resume -->
+
   <!-- Consult User -->
-  <div class="user-consult">
-    <div class="user-consult-col">
-      <div class="form-consult-title mb-4">
-        <h2>Usuario ó entidad que realiza la consulta:</h2>
+    <div class="user-consult">
+      <div class="user-consult-col">
+        <div class="form-consult-title mb-4">
+          <h2>Usuario ó entidad que realiza la consulta:</h2>
+        </div>
+        <form class="form-user-consult">
+          <label for="userConsultDate">
+            <span>Fecha</span>
+            <input type="text" id="userConsultDate" placeholder="24-04-2020">
+          </label>
+          <label for="userConsultHour">
+            <span>Hora</span>
+            <input type="text" id="userConsultHour" placeholder="00:00">
+          </label>
+          <label for="userConsultIdReport">
+            <span>ID del reporte</span>
+            <input type="text" id="userConsultIdReport" placeholder="012345">
+          </label>
+          <label for="userConsultName">
+            <span>Usuario</span>
+            <input type="text" id="userConsultName" placeholder="Nombre">
+          </label>
+        </form>
       </div>
-      <form class="form-user-consult">
-        <label for="userConsultDate">
-          <span>Fecha</span>
-          <input type="text" id="userConsultDate" placeholder="24-04-2020">
-        </label>
-        <label for="userConsultHour">
-          <span>Hora</span>
-          <input type="text" id="userConsultHour" placeholder="00:00">
-        </label>
-        <label for="userConsultIdReport">
-          <span>ID del reporte</span>
-          <input type="text" id="userConsultIdReport" placeholder="012345">
-        </label>
-        <label for="userConsultName">
-          <span>Usuario</span>
-          <input type="text" id="userConsultName" placeholder="Nombre">
-        </label>
-      </form>
-    </div>
-    <div class="user-consult-col">
-      <div>
-        <img class="logos" src="imagenes/logo-blanco.png" alt="">
-        <img class="logos" src="imagenes/logo-blanco2.png" alt="">
+      <div class="user-consult-col">
+        <div>
+          <img class="logos" src="imagenes/logo-blanco.png" alt="">
+          <img class="logos" src="imagenes/logo-blanco2.png" alt="">
+        </div>
+        <p>
+          Los resultados de este informe son válidos únicamente el día de su generación. Las
+          consultas realizadas por el motor de búsqueda de XploraTM busca en diferentes fuentes de
+          información públicas y/o fuentes privadas de la institución a las que se tiene acceso. En
+          ningún caso estas fuentes de información son administradas por QUALITA CORP SAS y el
+          uso que se le de a la información aquí contenida es responsabilidad del usuario que realiza
+          la consulta..
+        </p>
       </div>
-      <p>
-        Los resultados de este informe son válidos únicamente el día de su generación. Las
-        consultas realizadas por el motor de búsqueda de XploraTM busca en diferentes fuentes de
-        información públicas y/o fuentes privadas de la institución a las que se tiene acceso. En
-        ningún caso estas fuentes de información son administradas por QUALITA CORP SAS y el
-        uso que se le de a la información aquí contenida es responsabilidad del usuario que realiza
-        la consulta..
-      </p>
     </div>
-  </div>
-<!-- End Consult User -->
+  <!-- End Consult User -->
 <script>
   const ctx = document.querySelectorAll('.chart');
 

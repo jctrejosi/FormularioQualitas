@@ -348,7 +348,7 @@ canvas{
 	top: 0;
 	width: 100%;
 	z-index: -2;
-	opacity: .7;
+	opacity: .3;
 }
 
 .container-basic-data-bg-filter {
@@ -356,7 +356,7 @@ canvas{
 	height: 100%;
 	width: 100%;
 	position: absolute;
-	opacity: .2;
+	opacity: .1;
 	z-index: -1;
 }
 
@@ -516,8 +516,30 @@ canvas{
 	padding: 1rem;
 }
 
-.container-table table tbody tr:nth-child(odd) {
+.container-table table tbody tr:nth-child(odd),
+.container-table-resume table tbody tr:nth-child(odd) {
 	background-color: rgb(233, 233, 233)
+}
+
+.container-table-resume {
+	max-width: 70rem;
+	margin: 5rem auto 10rem;
+}
+
+.container-table-resume table tbody tr td,
+.container-table-resume table thead tr th {
+	padding: .3rem .5rem;
+	text-align: center;
+	width: calc(100% / 6);
+}
+
+.container-table-resume table tbody tr td:last-child {
+	text-align: left;
+}
+
+.container-table-resume table thead tr th {
+	background-color: #233c71;
+	color: white;
 }
 
 /* ------ end progress bar circle ---- */
