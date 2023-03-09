@@ -3,14 +3,50 @@
     display: none;
   }
   .header-bg {
-    display: flex;
+    display: none;
   }
 
-  .container-table table tr:nth-child(2) th {
-    box-shadow: .1rem .1rem .1rem rgba(0, 0, 0, .2);
+  .header-text {
+    background: var(--blue-gradient);
+    padding: 2rem 1rem;
+    border-radius: 1rem .5rem 5rem 1rem;
   }
+
+  .header-text h2 {
+    font-size: 1.5rem;
+  }
+
+  .main-container-1 {
+    padding-top: 15rem;
+    min-height: 80rem;
+  }
+
+  .container-basic-data {
+    padding-top: 15rem;
+    min-height: 80rem;
+  }
+
+  .container-table-resume {
+    padding-top: 15rem;
+  }
+
+  .search-resume-laft,
+  .search-resume-informative {
+    padding-top: 15rem;
+    min-height: 90rem;
+  }
+
+  .title, .title-sub {
+    max-height: 3rem;
+  }
+
+  .user-consult-col {
+		padding: 0 2rem;
+		width: 50%;
+	}
 
   .titulo-validacion p,
+  .header-text,
   .header-text h2,
   .titulo-validacion,
   .titulo-validacion::before,
@@ -19,6 +55,7 @@
   .title,
   .title > h2,
   .title-sub,
+  .btn-circle,
   .container-basic-data-bg-filter,
   .container-table table tr:first-child th p,
   .search-resume-informative .container-table table tr:first-child th p,

@@ -1,8 +1,12 @@
 
-@media (min-width: 1024px) {
+@media (min-width: 1100px) {
 	.user-consult-col {
 		padding: 0 2rem;
 		width: 50%;
+	}
+
+	.user-consult-col:first-child {
+		padding-bottom: 0;
 	}
 
 	.user-consult-col:nth-child(2) {
@@ -10,9 +14,30 @@
 		border-top-left-radius: 2rem;
 		padding-top: 2rem;
 	}
+
+	.buttons-type {
+		position: absolute;
+		left: 0;
+		top: 0;
+	}
 }
 
 @media (min-width: 769px) {
+	.header {
+		flex-direction: row;
+		padding-top: 3rem;
+	}
+
+	.logos {
+		max-width: 12rem;
+		margin: 0;
+	}
+
+	.header-text {
+		background: transparent;
+		padding: 0 2rem 0 5rem;
+	}
+
 	.header-bg {
 		display: flex;
 	}

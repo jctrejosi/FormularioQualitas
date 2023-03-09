@@ -44,9 +44,10 @@ canvas{
 }
 
 .header {
-	padding-top: 3rem;
+	padding-top: .5rem;
 	display: flex;
 	width: 100%;
+	flex-direction: column;
 }
 
 .header-logos {
@@ -56,9 +57,9 @@ canvas{
 }
 
 .header-text {
+	background: var(--blue-gradient);
 	flex: 1;
-	padding-left: 5rem;
-	padding-right: 2rem;
+	padding: 1rem;
 }
 
 .header-text h2 {
@@ -78,13 +79,14 @@ canvas{
 	z-index: -1;
 }
 
-.container {
+.main-container-1 {
 	padding-left: 1rem;
 	padding-right: 1rem;
 }
 
 .logos {
-	max-width: 12rem;
+	max-width: 9rem;
+	margin: .5rem;
 	object-fit: contain;
 }
 
@@ -276,6 +278,7 @@ canvas{
 
 .user-consult-col:first-child {
 	padding-left: .3rem;
+	padding-bottom: 2rem;
 }
 
 .user-consult-col:first-child {
@@ -309,12 +312,13 @@ canvas{
 	align-items: center;
 	display: flex;
 	max-width: 70rem;
-	margin: 0 auto;
 	padding: 2rem;
 }
 
 .buttons-type h3 {
 	color: var(--blue);
+	font-weight: 600;
+	font-size: 1rem;
 	margin-right: 2rem;
 }
 
@@ -324,12 +328,12 @@ canvas{
 	border: .3rem solid rgb(155, 155, 155);
 	color: white;
 	display: flex;
-	font-weight: 600;
-	font-size: 1.1rem;
-	height: 6rem;
+	font-weight: 500;
+	font-size: .8rem;
+	height: 4rem;
 	justify-content: center;
-	margin: 2rem;
-	width: 6rem;
+	margin: 1rem;
+	width: 4rem;
 }
 
 .btn-circle--active {
@@ -365,7 +369,9 @@ canvas{
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	padding: 2rem;
+	margin-bottom: 6rem;
+	margin-top: 8rem;
+	padding: 4rem 2rem;
 	position: relative;
 }
 
@@ -374,6 +380,10 @@ canvas{
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
+}
+
+.container-table-resume {
+	min-height: 50rem;
 }
 
 .subtitle-underlined {
@@ -521,6 +531,11 @@ canvas{
 	background-color: rgb(233, 233, 233)
 }
 
+.container-notify > .search-resume-informative {
+	max-width: 30rem;
+	margin: 0 auto;
+}
+
 .container-table-resume {
 	max-width: 70rem;
 	margin: 5rem auto 10rem;
@@ -538,6 +553,7 @@ canvas{
 }
 
 .container-table-resume table thead tr th {
+	height: 3rem;
 	background-color: #233c71;
 	color: white;
 }
