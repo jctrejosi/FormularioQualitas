@@ -19,14 +19,13 @@
 
     <!-- cabecera -->
     <header class="header">
-      <img class="header-bg" src="imagenes/fondo.svg" alt="">
-        <div class="header-logos">
-          <img class="logos" src="imagenes/logo1.png" alt="">
-          <img class="logos" src="imagenes/logo2.png" alt="">
-        </div>
-        <div class="header-text">
-          <h2>REGTECH especializada en prevención de crímenes financieros</h2>
-        </div>
+      <div class="header-logos">
+        <img class="logos" src="imagenes/logo-blanco.png" alt="">
+        <img class="logos" src="imagenes/logo-blanco2.png" alt="">
+      </div>
+      <div class="header-text">
+        <h2>REGTECH especializada en prevención de crímenes financieros</h2>
+      </div>
     </header>
     <div class="main-container-1">
       <!-- Module 1 -->
@@ -41,31 +40,57 @@
         </div>
       <!-- End Module 1 -->
 
-      <!-- Form Consult -->
-        <div class="form-consult">
-            <div class="form-consult-title">
-                <h2>Datos de consulta</h2>
-            </div>
-            <form>
-                <label for="documentType">
-                  <span>Tipo de documento</span>
-                  <input type="text" name="documentType" id="documentType" placeholder="Cédula de ciudadanía">
-                </label>
-                <label for="documentNumber">
-                  <span>Identificación</span>
-                  <input type="number" name="documentNumber" id="documentNumber" placeholder="1059000001">
-                </label>
-                <label for="documentTypePerson">
-                  <span>Tipo de persona</span>
-                  <input type="text" name="documentTypePerson" id="documentTypePerson" placeholder="Natural">
-                </label>
-                <label for="documentAlias">
-                  <span>Nombre completo / Razón social / Alias</span>
-                  <input type="text" id="documentAlias" placeholder="Alias">
-                </label>
-            </form>
+      <!-- Consult data -->
+        <div class="consult-data">
+          <div class="title">
+            <h2>Datos de consulta</h2>
+          </div>
+          <ul class="consult-data-list">
+            <li class="consult-data-item">
+              <span>Tipo de documento:</span>
+              <span>Cédula de ciudadanía</span>
+            </li>
+            <li class="consult-data-item">
+              <span>Identificación:</span>
+              <span>10293591</span>
+            </li>
+            <li class="consult-data-item">
+              <span>Tipo de persona:</span>
+              <span>Natural</span>
+            </li>
+            <li class="consult-data-item">
+              <span>Nombre / Razón social:</span>
+              <span>Juan Carlos Trejos</span>
+            </li>
+          </ul>
         </div>
-      <!-- End Form Consult -->
+      <!-- End Consult data -->
+
+      <!-- User Consult -->
+      <div class="consult-data">
+        <div class="title">
+          <h2>Usuario ó entidad que realiza la consulta</h2>
+        </div>
+        <ul>
+          <li>
+            <span>Fecha de generación:</span>
+            <span>10 / 03 / 2013</span>
+          </li>
+          <li>
+            <span>Hora:</span>
+            <span>00:00</span>
+          </li>
+          <li>
+            <span>Id del reporte:</span>
+            <span>1332143235</span>
+          </li>
+          <li>
+            <span>Usuario del sistema:</span>
+            <span>User1</span>
+          </li>
+        </ul>
+      </div>
+      <!-- End User Consult -->
     </div>
 
 <!-- basic data -->
@@ -88,19 +113,39 @@
       <h3 class="subtitle-underlined">Porcentaje de coincidencia</h3>
       <div class="container-basic-data-graphs">
         <div class="container-basic-data-graph">
-          <canvas class="chart" data-percent="60"></canvas>
-          <p>60%</p>
-          <span>value</span>
+          <canvas class="chart" data-percent=""></canvas>
+          <p></p>
+          <span class="consult-off">Textual</span>
         </div>
         <div class="container-basic-data-graph">
-          <canvas class="chart" data-percent="20"></canvas>
-          <p>20%</p>
-          <span>value</span>
+          <canvas class="chart" data-percent=""></canvas>
+          <p></p>
+          <span class="consult-off">Difuso</span>
         </div>
         <div class="container-basic-data-graph">
-          <canvas class="chart" data-percent="60"></canvas>
-          <p>60%</p>
-          <span>value</span>
+          <canvas class="chart" data-percent=""></canvas>
+          <p></p>
+          <span class="consult-off">Fonético</span>
+        </div>
+        <div class="container-basic-data-graph">
+          <canvas class="chart" data-percent=""></canvas>
+          <p></p>
+          <span class="consult-off">Textual Exacto</span>
+        </div>
+        <div class="container-basic-data-graph">
+          <canvas class="chart" data-percent="90"></canvas>
+          <p>90%</p>
+          <span class="consult-on">Contenido</span>
+        </div>
+        <div class="container-basic-data-graph">
+          <canvas class="chart" data-percent="93"></canvas>
+          <p>93%</p>
+          <span class="consult-on">Identificación</span>
+        </div>
+        <div class="container-basic-data-graph">
+          <canvas class="chart" data-percent=""></canvas>
+          <p></p>
+          <span class="consult-off">Identicación y Textual</span>
         </div>
       </div>
     </div>
@@ -111,16 +156,16 @@
       <h3 class="subtitle-underlined">Campos consultados</h3>
       <ul>
         <li>
-          <span class="consult-on">Campo consultado</span>
+          <span class="consult-on">Nombre</span>
         </li>
         <li>
-          <span class="consult-off">Campo consultado</span>
+          <span class="consult-on">Identificación</span>
         </li>
         <li>
-          <span class="consult-off">Campo consultado</span>
+          <span class="consult-on">Tipo de Persona</span>
         </li>
         <li>
-          <span class="consult-off">Campo consultado</span>
+          <span class="consult-on">Tipo de documento</span>
         </li>
       </ul>
     </div>
@@ -131,10 +176,22 @@
       <h3 class="subtitle-underlined">Tipo de consulta</h3>
       <ul>
         <li>
-          <span class="consult-on">Tipo</span>
+          <span class="consult-off">normal</span>
         </li>
         <li>
-          <span class="consult-off">Tipo</span>
+          <span class="consult-on">Manual</span>
+        </li>
+        <li>
+          <span class="consult-off">Lote</span>
+        </li>
+        <li>
+          <span class="consult-off">Simple</span>
+        </li>
+        <li>
+          <span class="consult-off">Masiva Manual</span>
+        </li>
+        <li>
+          <span class="consult-off">Masiva Simple</span>
         </li>
       </ul>
     </div>
@@ -154,54 +211,98 @@
       <table>
         <thead>
           <tr>
-            <th>
+            <th colspan="2">
               <p><span>Lista Colombiana</span></p>
             </th>
-            <th>
+            <th colspan="2">
               <p><span>Lista Internacional</span></p>
             </th>
           </tr>
           <tr>
-            <th>Title column</th>
-            <th>Title column</th>
+            <th>Código</th>
+            <th>Descripción</th>
+            <th>Código</th>
+            <th>Descripción</th>
           </tr>
         </thead>
         <tbody>
           <tr>
-            <td>Alfreds Futterkiste</td>
-            <td>Maria Anders</td>
+            <td>1234</td>
+            <td>Sigep</td>
+            <td>5342</td>
+            <td>OFAC</td>
           </tr>
           <tr>
-            <td>Alfreds Futterkiste</td>
-            <td>Maria Anders</td>
+            <td>1234</td>
+            <td>Sigep</td>
+            <td>5342</td>
+            <td>OFAC</td>
           </tr>
           <tr>
-            <td>Alfreds Futterkiste</td>
-            <td>Maria Anders</td>
+            <td>1234</td>
+            <td>Sigep</td>
+            <td>5342</td>
+            <td>OFAC</td>
           </tr>
           <tr>
-            <td>Alfreds Futterkiste</td>
-            <td>Maria Anders</td>
+            <td>1234</td>
+            <td>Sigep</td>
+            <td>5342</td>
+            <td>OFAC</td>
           </tr>
           <tr>
-            <td>Alfreds Futterkiste</td>
-            <td>Maria Anders</td>
+            <td>1234</td>
+            <td>Sigep</td>
+            <td>5342</td>
+            <td>OFAC</td>
           </tr>
           <tr>
-            <td>Alfreds Futterkiste</td>
-            <td>Maria Anders</td>
+            <td>1234</td>
+            <td>Sigep</td>
+            <td>5342</td>
+            <td>OFAC</td>
           </tr>
           <tr>
-            <td>Alfreds Futterkiste</td>
-            <td>Maria Anders</td>
+            <td>1234</td>
+            <td>Sigep</td>
+            <td>5342</td>
+            <td>OFAC</td>
           </tr>
           <tr>
-            <td>Alfreds Futterkiste</td>
-            <td>Maria Anders</td>
+            <td>1234</td>
+            <td>Sigep</td>
+            <td>5342</td>
+            <td>OFAC</td>
           </tr>
           <tr>
-            <td>Alfreds Futterkiste</td>
-            <td>Maria Anders</td>
+            <td>1234</td>
+            <td>Sigep</td>
+            <td>5342</td>
+            <td>OFAC</td>
+          </tr>
+          <tr>
+            <td>1234</td>
+            <td>Sigep</td>
+            <td>5342</td>
+            <td>OFAC</td>
+          </tr>
+          <tr>
+            <td>1234</td>
+            <td>Sigep</td>
+            <td>5342</td>
+            <td>OFAC</td>
+          </tr>
+          <tr>
+            <td>1234</td>
+            <td>Sigep</td>
+            <td>5342</td>
+            <td>OFAC</td>
+          </tr>
+          <tr>
+            <td>1234</td>
+            <td>Sigep</td>
+            <td>5342</td>
+            <td>OFAC</td>
           </tr>
         </tbody>
       </table>
@@ -221,54 +322,98 @@
       <table>
         <thead>
           <tr>
-            <th>
+            <th colspan="2">
               <p><span>Lista Colombiana</span></p>
             </th>
-            <th>
+            <th colspan="2">
               <p><span>Lista Internacional</span></p>
             </th>
           </tr>
           <tr>
-            <th>Title column</th>
-            <th>Title column</th>
+            <th>Código</th>
+            <th>Descripción</th>
+            <th>Código</th>
+            <th>Descripción</th>
           </tr>
         </thead>
         <tbody>
           <tr>
-            <td>Alfreds Futterkiste</td>
-            <td>Maria Anders</td>
+            <td>1234</td>
+            <td>Sigep</td>
+            <td>5342</td>
+            <td>OFAC</td>
           </tr>
           <tr>
-            <td>Alfreds Futterkiste</td>
-            <td>Maria Anders</td>
+            <td>1234</td>
+            <td>Sigep</td>
+            <td>5342</td>
+            <td>OFAC</td>
           </tr>
           <tr>
-            <td>Alfreds Futterkiste</td>
-            <td>Maria Anders</td>
+            <td>1234</td>
+            <td>Sigep</td>
+            <td>5342</td>
+            <td>OFAC</td>
           </tr>
           <tr>
-            <td>Alfreds Futterkiste</td>
-            <td>Maria Anders</td>
+            <td>1234</td>
+            <td>Sigep</td>
+            <td>5342</td>
+            <td>OFAC</td>
           </tr>
           <tr>
-            <td>Alfreds Futterkiste</td>
-            <td>Maria Anders</td>
+            <td>1234</td>
+            <td>Sigep</td>
+            <td>5342</td>
+            <td>OFAC</td>
           </tr>
           <tr>
-            <td>Alfreds Futterkiste</td>
-            <td>Maria Anders</td>
+            <td>1234</td>
+            <td>Sigep</td>
+            <td>5342</td>
+            <td>OFAC</td>
           </tr>
           <tr>
-            <td>Alfreds Futterkiste</td>
-            <td>Maria Anders</td>
+            <td>1234</td>
+            <td>Sigep</td>
+            <td>5342</td>
+            <td>OFAC</td>
           </tr>
           <tr>
-            <td>Alfreds Futterkiste</td>
-            <td>Maria Anders</td>
+            <td>1234</td>
+            <td>Sigep</td>
+            <td>5342</td>
+            <td>OFAC</td>
           </tr>
           <tr>
-            <td>Alfreds Futterkiste</td>
-            <td>Maria Anders</td>
+            <td>1234</td>
+            <td>Sigep</td>
+            <td>5342</td>
+            <td>OFAC</td>
+          </tr>
+          <tr>
+            <td>1234</td>
+            <td>Sigep</td>
+            <td>5342</td>
+            <td>OFAC</td>
+          </tr>
+          <tr>
+            <td>1234</td>
+            <td>Sigep</td>
+            <td>5342</td>
+            <td>OFAC</td>
+          </tr>
+          <tr>
+            <td>1234</td>
+            <td>Sigep</td>
+            <td>5342</td>
+            <td>OFAC</td>
+          </tr>
+          <tr>
+            <td>1234</td>
+            <td>Sigep</td>
+            <td>5342</td>
+            <td>OFAC</td>
           </tr>
         </tbody>
       </table>
@@ -276,46 +421,52 @@
   </div>
   <!-- End Resumen de búsqueda informativa -->
 
-  <!-- Notify -->
+  <!-- Notificaciones -->
   <div class="container-notify">
     <div class="container-table">
       <table>
         <thead>
           <tr>
-            <th>
+            <th colspan="2">
               <p><span>Propias y proveedores</span></p>
             </th>
           </tr>
           <tr>
-            <th>Title column</th>
+            <th>Código</th>
+            <th>Descripción</th>
           </tr>
         </thead>
         <tbody>
           <tr>
+            <td>1234</td>
             <td>Alfreds Futterkiste</td>
           </tr>
           <tr>
+            <td>1234</td>
             <td>Alfreds Futterkiste</td>
           </tr>
           <tr>
+            <td>1234</td>
             <td>Alfreds Futterkiste</td>
           </tr>
           <tr>
+            <td>1234</td>
             <td>Alfreds Futterkiste</td>
           </tr>
           <tr>
+            <td>1234</td>
             <td>Alfreds Futterkiste</td>
           </tr>
           <tr>
+            <td>1234</td>
             <td>Alfreds Futterkiste</td>
           </tr>
           <tr>
+            <td>1234</td>
             <td>Alfreds Futterkiste</td>
           </tr>
           <tr>
-            <td>Alfreds Futterkiste</td>
-          </tr>
-          <tr>
+            <td>1234</td>
             <td>Alfreds Futterkiste</td>
           </tr>
         </tbody>
@@ -335,107 +486,140 @@
       </div>
     </div>
   </div>
-  <!-- End Notify -->
+  <!-- End Notificaciones -->
 
-  <!-- Resume -->
+  <!-- Tabla 1 -->
     <div class="container-table-resume">
       <table>
         <thead>
           <tr>
-            <th>Puntaje</th>
-            <th>Nombre/Razón social</th>
-            <th>Lista</th>
-            <th>Tipo</th>
-            <th>Algoritmo</th>
-            <th>Observación</th>
+            <th>Nombre</th>
+            <th>Identificación</th>
+            <th>Pais</th>
+            <th>Estado / Dpto</th>
+            <th>Ciudad</th>
+            <th>Descripción</th>
           </tr>
         </thead>
         <tbody>
           <tr>
-            <td>32</td>
-            <td>Maria Anders</td>
-            <td>Otto</td>
-            <td>@twitter</td>
-            <td>@mdo</td>
-            <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita, sit.</td>
-          </tr>
-          <tr>
-            <td>32</td>
-            <td>Maria Anders</td>
-            <td>Otto</td>
-            <td>@twitter</td>
-            <td>@mdo</td>
-            <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita, sit.</td>
-          </tr>
-          <tr>
-            <td>32</td>
-            <td>Maria Anders</td>
-            <td>Otto</td>
-            <td>@twitter</td>
-            <td>@mdo</td>
-            <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita, sit.</td>
-          </tr>
-          <tr>
-            <td>32</td>
-            <td>Maria Anders</td>
-            <td>Otto</td>
-            <td>@twitter</td>
-            <td>@mdo</td>
-            <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita, sit.</td>
-          </tr>
-          <tr>
-            <td>32</td>
-            <td>Maria Anders</td>
-            <td>Otto</td>
-            <td>@twitter</td>
-            <td>@mdo</td>
+            <td>Pepito Perez</td>
+            <td>102343231</td>
+            <td>Colombia</td>
+            <td>Caldas</td>
+            <td>Manizales</td>
             <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita, sit.</td>
           </tr>
         </tbody>
       </table>
     </div>
-  <!-- End Resume -->
+  <!-- Fin Tabla 1 -->
 
-  <!-- Consult User -->
-    <footer class="user-consult">
-      <div class="user-consult-col">
-        <div class="form-consult-title mb-4">
-          <h2>Usuario ó entidad que realiza la consulta:</h2>
-        </div>
-        <form class="form-user-consult">
-          <label for="userConsultDate">
-            <span>Fecha</span>
-            <input type="text" id="userConsultDate" placeholder="24-04-2020">
-          </label>
-          <label for="userConsultHour">
-            <span>Hora</span>
-            <input type="text" id="userConsultHour" placeholder="00:00">
-          </label>
-          <label for="userConsultIdReport">
-            <span>ID del reporte</span>
-            <input type="text" id="userConsultIdReport" placeholder="012345">
-          </label>
-          <label for="userConsultName">
-            <span>Usuario</span>
-            <input type="text" id="userConsultName" placeholder="Nombre">
-          </label>
-        </form>
+  <!-- Tabla 2 -->
+    <div class="container-table-resume">
+      <table>
+        <thead>
+          <tr>
+            <th>Nombre</th>
+            <th>Identificación</th>
+            <th>Pais</th>
+            <th>Estado / Dpto</th>
+            <th>Ciudad</th>
+            <th>Estado Procesal</th>
+            <th>Delito / Situación</th>
+            <th>Descripción</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Pepito Perez</td>
+            <td>102343231</td>
+            <td>Colombia</td>
+            <td>Caldas</td>
+            <td>Manizales</td>
+            <td>Acusado</td>
+            <td>Fraude Procesal</td>
+            <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita, sit.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  <!-- Fin Tabla 2 -->
+
+  <!-- Tabla 3 -->
+    <div class="container-table-resume">
+      <table>
+        <thead>
+          <tr>
+            <th>Nombre</th>
+            <th>Proceso</th>
+            <th>Fecha</th>
+            <th>Despacho</th>
+            <th>Ciudad</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Pepito Perez</td>
+            <td>013412351242</td>
+            <td>2008-01-15</td>
+            <td>Despacho 000 - tribunal superior - penal - antioquia</td>
+            <td>Antioquia</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  <!-- Fin Tabla 3 -->
+
+  <!-- Tabla 4 -->
+    <div class="container-table-resume">
+      <table>
+        <thead>
+          <tr>
+            <th>Nombre</th>
+            <th>Identificación</th>
+            <th>Entidad</th>
+            <th>Cargo</th>
+            <th>Tipo de publicación</th>
+            <th>Fecha Publicación</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Pepito Perez</td>
+            <td>*********</td>
+            <td>Senado de la república</td>
+            <td>sin cargo asignado</td>
+            <td>---</td>
+            <td>2020-02-18 12:16</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  <!-- Fin Tabla 4 -->
+
+  <!-- Observaciones -->
+  <div class="container-observations">
+    <h2 class="subtitle-underlined">Observaciones</h2>
+    <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, laboriosam assumenda. Atque quam consectetur, doloribus sed necessitatibus non fugit, aut at vero mollitia facilis ea velit ex dicta alias corporis.</span>
+  </div>
+  <!-- Fin Observaciones -->
+
+  <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-logos">
+        <img class="logos" src="imagenes/logo-blanco.png" alt="">
+        <img class="logos" src="imagenes/logo-blanco2.png" alt="">
       </div>
-      <div class="user-consult-col">
-        <div>
-          <img class="logos" src="imagenes/logo-blanco.png" alt="">
-          <img class="logos" src="imagenes/logo-blanco2.png" alt="">
-        </div>
-        <p>
-          Los resultados de este informe son válidos únicamente el día de su generación. Las
-          consultas realizadas por el motor de búsqueda de XploraTM busca en diferentes fuentes de
-          información públicas y/o fuentes privadas de la institución a las que se tiene acceso. En
-          ningún caso estas fuentes de información son administradas por QUALITA CORP SAS y el
-          uso que se le de a la información aquí contenida es responsabilidad del usuario que realiza
-          la consulta..
-        </p>
-      </div>
+      <p>
+        Los resultados de este informe son válidos únicamente el día de su generación. Las
+        consultas realizadas por el motor de búsqueda de XploraTM busca en diferentes fuentes de
+        información públicas y/o fuentes privadas de la institución a las que se tiene acceso. En
+        ningún caso estas fuentes de información son administradas por QUALITA CORP SAS y el
+        uso que se le de a la información aquí contenida es responsabilidad del usuario que realiza
+        la consulta..
+      </p>
     </footer>
-  <!-- End Consult User -->
+  <!-- Fin Footer -->
   </body>
 </html>

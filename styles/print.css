@@ -40,10 +40,9 @@
     max-height: 3rem;
   }
 
-  .user-consult-col {
-		padding: 0 2rem;
-		width: 50%;
-	}
+  body {
+    max-width: 80rem;
+  }
 
   * {
     -webkit-print-color-adjust: exact;
