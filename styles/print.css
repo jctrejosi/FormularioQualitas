@@ -1,9 +1,60 @@
 @media print {
+  body {
+    width: 70rem;
+    height: 120rem;
+  }
+
+  * {
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
   .btn-print {
     display: none;
   }
-  .header-bg {
+
+  .footer {
+    bottom: 0;
+    position: fixed;
+    background-color: transparent;
+  }
+
+  .footer-logos {
     display: none;
+  }
+
+  .footer-logos-fix {
+    display: flex;
+    margin: 0 1rem;
+  }
+
+  .footer-logos-fix img {
+    max-width: 5rem;
+  }
+
+  .footer p {
+    color: #414141;
+    font-size: .6rem;
+  }
+
+  .alerts {
+    display: flex;
+  }
+
+  .header-fix {
+    display: flex;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  .header-fix img {
+    max-width: 7rem;
+    margin: 0 1rem;
+  }
+
+  .buttons-type {
+    top: 2rem;
   }
 
   .header-text {
@@ -17,35 +68,34 @@
   }
 
   .main-container-1 {
-    padding-top: 15rem;
+    margin-top: 10rem;
     min-height: 80rem;
   }
 
   .container-basic-data {
-    padding-top: 15rem;
-    min-height: 80rem;
+    margin-top: 10rem;
+    min-height: 90rem;
   }
 
-  .container-table-resume {
-    padding-top: 15rem;
+  .container-notify {
+    padding-top: 5rem;
+    margin-top: 15rem;
+    min-height: 90rem;
+  }
+
+  .container-tables {
+    padding-top: 5rem;
+    position: relative;
+    min-height: 90rem;
   }
 
   .search-resume-laft,
   .search-resume-informative {
-    padding-top: 15rem;
+    margin-top: 15rem;
     min-height: 90rem;
   }
 
   .title, .title-sub {
     max-height: 3rem;
-  }
-
-  body {
-    max-width: 80rem;
-  }
-
-  * {
-    -webkit-print-color-adjust: exact;
-    print-color-adjust: exact;
   }
 }
