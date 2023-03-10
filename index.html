@@ -1,6 +1,5 @@
 <!doctype html>
-<html lang="en">
-  <a class="btn-print" href="javascript:window.print()">Guardar Informe <img src="imagenes/download.svg" alt="download"></a>
+<html lang="es">
   <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
@@ -9,10 +8,14 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.8.0/chart.min.js"></script>
-    <script type="text/javascript" src="index.js"></script>
+    <script type="text/javascript" src="index.js" defer></script>
     <link rel="stylesheet" href="main.css">
   </head>
-  <body>
+  <body id="body">
+    <!-- End Botón de guardar pdf -->
+    <a class="btn-print" href="javascript:window.print()">Guardar Informe <img src="imagenes/download.svg" alt="download"></a>
+    <!-- End Botón de guardar pdf -->
+
     <!-- cabecera -->
     <header class="header">
       <img class="header-bg" src="imagenes/fondo.svg" alt="">
@@ -69,15 +72,11 @@
     <div class="container-basic-data-bg-filter"></div>
     <img class="container-basic-data-bg" src="imagenes/bg-consult2.jpg" alt="">
     <!-- Buttons Type -->
-      <div class="buttons-type">
+      <aside class="buttons-type">
         <h3>Tipos de botones</h3>
-        <div class="btn-circle btn-circle--active">
-          <span>Activo</span>
-        </div>
-        <div class="btn-circle btn-circle--inactive">
-          <span>Inactivo</span>
-        </div>
-      </div>
+        <span class="consult-on">Activo</span>
+        <span class="consult-off">Inactivo</span>
+      </aside>
     <!-- End Buttons Type -->
     <div class="title">
       <h2>Datos básicos de la consulta</h2>
@@ -111,20 +110,16 @@
       <h3 class="subtitle-underlined">Campos consultados</h3>
       <ul>
         <li>
-          <img src="/imagenes/check.png" alt="Icon-chek">
-          <span>Campo</span>
+          <span class="consult-on">Campo consultado</span>
         </li>
         <li>
-          <img src="/imagenes/check.png" alt="Icon-chek">
-          <span>Campo</span>
+          <span class="consult-off">Campo consultado</span>
         </li>
         <li>
-          <img src="/imagenes/check.png" alt="Icon-chek">
-          <span>Campo</span>
+          <span class="consult-off">Campo consultado</span>
         </li>
         <li>
-          <img src="/imagenes/cross.png" alt="Icon-chek">
-          <span>Campo</span>
+          <span class="consult-off">Campo consultado</span>
         </li>
       </ul>
     </div>
@@ -135,16 +130,10 @@
       <h3 class="subtitle-underlined">Tipo de consulta</h3>
       <ul>
         <li>
-          <img src="/imagenes/checkbox.png" alt="Icon-chek">
-          <span>Tipo</span>
+          <span class="consult-on">Tipo</span>
         </li>
         <li>
-          <img src="/imagenes/checkon.png" alt="Icon-chek">
-          <span>Tipo</span>
-        </li>
-        <li>
-          <img src="/imagenes/checkon.png" alt="Icon-chek">
-          <span>Tipo</span>
+          <span class="consult-off">Tipo</span>
         </li>
       </ul>
     </div>
@@ -447,34 +436,5 @@
       </div>
     </footer>
   <!-- End Consult User -->
-<script>
-  const ctx = document.querySelectorAll('.chart');
-
-  ctx.forEach((e) => {
-    var newCtx = e.getContext("2d");
-
-    var percent = Number(e.dataset.percent)
-    var remnant = 100 - Number(e.dataset.percent)
-
-    new Chart(newCtx, {
-      type: 'doughnut',
-      data: {
-        datasets: [{
-          data: [percent, remnant],
-          backgroundColor: [
-            '#5980c9',
-            'rgba(255, 255, 255, .6)'
-          ],
-          borderColor: [
-            'transparent'
-          ]
-        }],
-      },
-      options: {
-        cutoutPercentage: 90
-      }
-    });
-  })
-</script>
   </body>
 </html>

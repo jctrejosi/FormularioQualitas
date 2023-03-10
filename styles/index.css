@@ -1,10 +1,12 @@
 :root{
 	--corporate:#ffa126;
 	--corporate-light:#ffa737;
-	--blue:#233c71;
+	--blue:#1e88e5;
 	--blue-gradient: linear-gradient(#5980c9, var(--blue));
 	--red-gradient: linear-gradient(#f7596e,#f31230);
 	--green-gradient: linear-gradient(#45d37b,#07a042);
+
+	--box-shadow: .1rem .1rem .1rem rgba(0, 0, 0, .2);
 }
 
 body {
@@ -21,6 +23,7 @@ canvas{
 .btn-print {
 	align-items: center;
 	background: var(--corporate);
+	border: 0;
 	border-radius: 1rem;
 	bottom: 1rem;
 	color: white;
@@ -309,10 +312,15 @@ canvas{
 }
 
 .buttons-type {
-	align-items: center;
+	align-items: flex-start;
 	display: flex;
-	max-width: 70rem;
+	border-radius: .5rem	;
+	flex-direction: column;
 	padding: 2rem;
+	position: absolute;
+	top: 1rem;
+	left: 1rem;
+	background-color: rgba(230, 230, 230, .7);
 }
 
 .buttons-type h3 {
@@ -320,28 +328,6 @@ canvas{
 	font-weight: 600;
 	font-size: 1rem;
 	margin-right: 2rem;
-}
-
-.btn-circle {
-	align-items: center;
-	border-radius: 50%;
-	border: .3rem solid rgb(155, 155, 155);
-	color: white;
-	display: flex;
-	font-weight: 500;
-	font-size: .8rem;
-	height: 4rem;
-	justify-content: center;
-	margin: 1rem;
-	width: 4rem;
-}
-
-.btn-circle--active {
-	background: var(--blue-gradient);
-}
-
-.btn-circle--inactive {
-	background: linear-gradient(#868686,#575757);
 }
 
 .container-basic-data-bg {
@@ -428,10 +414,10 @@ canvas{
 
 .container-basic-data-graph p {
 	color: var(--blue);
-	font-size: 1.1rem;
+	font-size: 1.4rem;
 	font-weight: 600;
 	position: absolute;
-	top: 6rem;
+	top: 5.8rem;
 }
 
 .container-basic-data-fields,
@@ -453,7 +439,6 @@ canvas{
 .container-basic-data-fields ul li,
 .container-basic-data-type ul li {
 	align-items: center;
-	background: linear-gradient(#d8e1f3,#8a97b4);
 	padding: .2rem .5rem;
 	border-radius: .3rem;
 	color: var(--blue);
@@ -461,6 +446,29 @@ canvas{
 	font-size: 1.3rem;
 	font-weight: 600;
 	margin: .5rem 1.5rem;
+}
+
+.consult-on,
+.consult-off {
+	align-items: center;
+	display: flex;
+	color: var(--blue);
+	font-weight: 600;
+}
+
+.consult-off::before,
+.consult-on::before {
+	background-position: center;
+	background-repeat: no-repeat;
+	background-image: url(/imagenes/switch_off.svg);
+	content: "";
+	height: 2.5rem;
+	width: 3rem;
+}
+
+.consult-on::before {
+	background-image: url(/imagenes/switch_on.svg);
+	transform: rotate(180deg);
 }
 
 .container-basic-data-fields ul li img,
@@ -548,6 +556,7 @@ canvas{
 	margin: 2rem;
 	padding: 2rem;
 	border: .1rem solid gray;
+	box-shadow: var(--box-shadow);
 	border-radius: 1rem;
 }
 
@@ -560,12 +569,19 @@ canvas{
 
 .container-notify-alert {
 	align-items: flex-start;
+	background-color: #fbf5c3;
+	box-shadow: var(--box-shadow);
 	border-radius: .5rem;
-	border: .1rem solid gray;
 	display: flex;
 	margin-top: 1rem;
 	padding: 2rem;
+	transform: skew(10deg);
 	width: 100%;
+}
+
+.container-notify-alert span,
+.container-notify-alert img {
+	transform: skew(-10deg);
 }
 
 .container-notify-alert img {
