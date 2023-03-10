@@ -45,28 +45,7 @@
 		width: 50%;
 	}
 
-  .titulo-validacion p,
-  .header-text,
-  .header-text h2,
-  .titulo-validacion,
-  .titulo-validacion::before,
-  .form-consult-title,
-  .form-consult-title > h2,
-  .title,
-  .title > h2,
-  .title-sub,
-  .consult-on,
-  .consult-off,
-  .container-basic-data-bg-filter,
-  .container-table table tr:first-child th p,
-  .search-resume-informative .container-table table tr:first-child th p,
-  .container-table table tr:nth-child(2) th,
-  .form-user-consult label input,
-  .user-consult-col:nth-child(2),
-  .user-consult-col:nth-child(2)::before,
-  .container-table-resume table thead tr th,
-  .container-table table tbody tr:nth-child(odd),
-  .container-table-resume table tbody tr:nth-child(odd) {
+  * {
     -webkit-print-color-adjust: exact;
     print-color-adjust: exact;
   }

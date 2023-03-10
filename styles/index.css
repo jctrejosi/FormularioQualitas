@@ -2,7 +2,7 @@
 	--corporate:#ffa126;
 	--corporate-light:#ffa737;
 	--blue:#1e88e5;
-	--blue-gradient: linear-gradient(#5980c9, var(--blue));
+	--blue-gradient: linear-gradient(#1e88e5, var(--blue));
 	--red-gradient: linear-gradient(#f7596e,#f31230);
 	--green-gradient: linear-gradient(#45d37b,#07a042);
 
