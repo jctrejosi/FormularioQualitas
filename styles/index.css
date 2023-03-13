@@ -1,10 +1,20 @@
 :root{
-	--corporate:#ffa126;
-	--corporate-light:#fdb14d;
-	--blue:#1e88e5;
-	--blue-gradient: linear-gradient(#1e88e5, var(--blue));
-	--red-gradient: linear-gradient(#f76b38,#FF4500);
+	--corporate:#fc881d;
+	--corporate-light:#fda048;
+	--purple: #5817a1;
+	--red: #ff1e00;
+	--red-light: #f0503b;
+	--blue:#0f518b;
+	--blue-light: #1e88e5;
+	--blue-gradient: linear-gradient(var(--blue-light), var(--blue));
+	--light-gradient: linear-gradient(white, var(--blue-light));
+	--red-gradient: linear-gradient(var(--red-light),var(--red));
 	--green-gradient: linear-gradient(#4bb995,#32ad84);
+
+	--notify-color:#fbf5c3;
+	--table-th-color:var(--purple);
+
+	--subtitle-underline-color:var(--purple);
 
 	--box-shadow: .1rem .1rem .1rem rgba(0, 0, 0, .2);
 }
@@ -52,12 +62,35 @@ canvas{
 
 .header {
 	align-items: center;
-	display: flex;
-	width: 100%;
 	box-shadow: 0 .3rem .3rem rgba(0, 0, 0, .4);
+	display: flex;
 	flex-direction: column;
-	background-color: var(--blue);
 	padding: .5rem;
+	position: relative;
+	width: 100%;
+}
+
+.header::before {
+	background: var(--blue-gradient);
+	border-bottom-right-radius: 65%;
+	content: "";
+	height: 100%;
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 100%;
+	z-index: -1;
+}
+
+.header::after {
+	background: var(--light-gradient);
+	content: "";
+	height: 100%;
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 100%;
+	z-index: -2;
 }
 
 .header-logos {
@@ -72,7 +105,6 @@ canvas{
 }
 
 .header-text {
-	background: var(--blue-gradient);
 	padding: 1rem;
 }
 
@@ -296,7 +328,7 @@ canvas{
 }
 
 .subtitle-underlined {
-	color: var(--blue);
+	color: var(--subtitle-underline-color);
 	font-weight: 600;
 	margin: 2rem 0;
 	padding-bottom: 1rem;
@@ -306,7 +338,7 @@ canvas{
 }
 
 .subtitle-underlined::before {
-	border-bottom: .2rem solid var(--blue);
+	border-bottom: .2rem solid var(--subtitle-underline-color);
 	position: absolute;
 	bottom: 0;
 	content: "";
@@ -435,7 +467,7 @@ canvas{
 
 .container-notify-alert {
 	align-items: flex-start;
-	background-color: #fbf5c3;
+	background-color: var(--notify-color);
 	border-radius: .5rem;
 	box-shadow: var(--box-shadow);
 	display: flex;
@@ -558,7 +590,7 @@ canvas{
 }
 
 .container-table-resume table thead tr th {
-	background-color: #7460ee;
+	background-color: var(--table-th-color);
 	color: white;
 	height: 3rem;
 	padding: 1.5rem 1rem;
@@ -585,12 +617,35 @@ canvas{
 }
 
 .footer {
-	background-color: var(--blue);
 	color: white;
 	display: flex;
 	flex-direction: column;
 	justify-content: left;
 	padding: 1rem;
+	position: relative;
+}
+
+.footer::before {
+	background: var(--blue-gradient);
+	content: "";
+	height: 100%;
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 100%;
+	z-index: -1;
+	border-top-left-radius: 50%;
+}
+
+.footer::after {
+	background: var(--light-gradient);
+	content: "";
+	height: 100%;
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 100%;
+	z-index: -2;
 }
 
 .footer-logos-fix {
