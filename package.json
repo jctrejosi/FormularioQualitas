@@ -1,11 +1,22 @@
 {
   "name": "formularioqualitas",
   "version": "1.0.0",
-  "description": "",
   "main": "index.html",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "esbuild index.js --bundle --outfile=dist/index.js --loader:.html=text"
   },
-  "author": "",
-  "license": "ISC"
+  "author": "jctrejosi",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jctrejosi/FormularioQualitas.git"
+  },
+  "bugs": {
+    "url": "https://github.com/jctrejosi/FormularioQualitas/issues"
+  },
+  "homepage": "https://github.com/jctrejosi/FormularioQualitas#readme",
+  "description": "",
+  "dependencies": {
+    "esbuild": "0.17.11"
+  }
 }

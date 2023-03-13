@@ -6,22 +6,24 @@
 	--red-light: #f0503b;
 	--blue:#0f518b;
 	--blue-light: #1e88e5;
+	--green: #0a6328;
+	--green-light: #2f9e54;
+	--notify-color:#fbf5c3;
 	--blue-gradient: linear-gradient(var(--blue-light), var(--blue));
 	--light-gradient: linear-gradient(white, var(--blue-light));
 	--red-gradient: linear-gradient(var(--red-light),var(--red));
-	--green-gradient: linear-gradient(#4bb995,#32ad84);
+	--green-gradient: linear-gradient(var(--green-light),var(--green));
 
-	--notify-color:#fbf5c3;
-	--table-th-color:var(--purple);
+	--table-th-color:var(--blue-gradient);
 
-	--subtitle-underline-color:var(--purple);
+	--subtitle-underline-color:var(--blue);
 
 	--box-shadow: .1rem .1rem .1rem rgba(0, 0, 0, .2);
 }
 
 body {
 	margin: 0;
-	font-family: "Source Sans Pro", Arial, Helvetica, sans-serif;	
+	font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
 }
 
 .header-fix {
@@ -545,6 +547,7 @@ canvas{
 
 .container-providers {
 	position: relative;
+	width: 100%;
 }
 
 .container-notify {
@@ -590,7 +593,7 @@ canvas{
 }
 
 .container-table-resume table thead tr th {
-	background-color: var(--table-th-color);
+	background: var(--table-th-color);
 	color: white;
 	height: 3rem;
 	padding: 1.5rem 1rem;

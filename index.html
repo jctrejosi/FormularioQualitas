@@ -9,7 +9,7 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.8.0/chart.min.js"></script>
-    <script type="text/javascript" src="index.js" defer></script>
+    <script type="module" src="index.js" defer></script>
     <link rel="stylesheet" href="main.css">
   </head>
   <body id="body">
@@ -341,12 +341,6 @@
             <td>OFAC</td>
           </tr>
           <tr>
-            <td><span class="checkin"></span></td>
-            <td>Sigep</td>
-            <td><span class="checkin"></span></td>
-            <td>OFAC</td>
-          </tr>
-          <tr>
             <td><span class="checkout"></span></td>
             <td>Sigep</td>
             <td><span class="checkout"></span></td>
@@ -356,19 +350,7 @@
             <td><span class="checkin"></span></td>
             <td>Sigep</td>
             <td><span class="checkin"></span></td>
-            <td>OFAC</td>
-          </tr>
-          <tr>
-            <td><span class="checkout"></span></td>
-            <td>Sigep</td>
-            <td><span class="checkout"></span></td>
-            <td>OFAC</td>
-          </tr>
-          <tr>
-            <td><span class="checkin"></span></td>
-            <td>Sigep</td>
-            <td><span class="checkin"></span></td>
-            <td>OFAC</td>
+            <td>OFAC 1</td>
           </tr>
           <tr>
             <td><span class="checkout"></span></td>
@@ -430,12 +412,6 @@
             <td>OFAC</td>
           </tr>
           <tr>
-            <td><span class="checkout"></span></td>
-            <td>Sigep</td>
-            <td><span class="checkout"></span></td>
-            <td>OFAC</td>
-          </tr>
-          <tr>
             <td><span class="checkin"></span></td>
             <td>Sigep</td>
             <td><span class="checkin"></span></td>
@@ -541,19 +517,7 @@
             <td><span class="checkout"></span></td>
             <td>Sigep</td>
             <td><span class="checkout"></span></td>
-            <td>OFAC</td>
-          </tr>
-          <tr>
-            <td><span class="checkin"></span></td>
-            <td>Sigep</td>
-            <td><span class="checkin"></span></td>
-            <td>OFAC</td>
-          </tr>
-          <tr>
-            <td><span class="checkout"></span></td>
-            <td>Sigep</td>
-            <td><span class="checkout"></span></td>
-            <td>OFAC</td>
+            <td>OFAC2</td>
           </tr>
         </tbody>
       </table>
@@ -563,6 +527,10 @@
 
   <!-- Propias y proveedores -->
   <div class="container-providers">
+    <div class="header-fix">
+      <img src="imagenes/logo1.png">
+      <img src="imagenes/logo2.png">
+    </div>
     <div class="alerts">
       <div class="container-notify-alert">
         <img src="imagenes/check.png" alt="notify-error">
@@ -574,10 +542,6 @@
       </div>
     </div>
     <div class="container-notify">
-      <div class="header-fix">
-        <img src="imagenes/logo1.png">
-        <img src="imagenes/logo2.png">
-      </div>
       <div class="container-table">
         <table>
           <thead>
@@ -660,10 +624,6 @@
 
   <!-- Tablas -->
   <div class="container-tables">
-    <div class="header-fix">
-      <img src="imagenes/logo1.png">
-      <img src="imagenes/logo2.png">
-    </div>
     <!-- Tabla 1 -->
       <div class="container-table-resume">
         <table>

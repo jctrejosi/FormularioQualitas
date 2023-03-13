@@ -4,6 +4,11 @@
     height: 120rem;
   }
 
+  @page {
+    margin: 0;
+    size: auto;
+  }
+
   * {
     -webkit-print-color-adjust: exact;
     print-color-adjust: exact;
@@ -65,33 +70,17 @@
     font-size: 1.5rem;
   }
 
-  .main-container-1 {
-    margin-top: 10rem;
-    min-height: 80rem;
-  }
-
-  .container-basic-data {
-    margin-top: 10rem;
-    min-height: 90rem;
-  }
-
-  .container-notify {
-    padding-top: 5rem;
-    margin-top: 15rem;
-    min-height: 90rem;
-  }
-
-  .container-tables {
-    padding-top: 5rem;
-    padding-bottom: 30rem;
-    position: relative;
-    max-height: 60rem;
-  }
-
+  table,
+  .main-container-1,
+  .container-basic-data,
   .search-resume-laft,
-  .search-resume-informative {
-    margin-top: 15rem;
-    min-height: 90rem;
+  .search-resume-informative,
+  .container-providers {
+    break-after: page;
+  }
+
+  .container-providers {
+    padding-top: 5rem;
   }
 
   .title, .title-sub {
