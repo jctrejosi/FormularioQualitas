@@ -1,4 +1,25 @@
+@media (min-width: 579px)  {
+	.alerts {
+		flex-direction: column;
+		left: 1rem;
+		max-width: 10rem;
+		position: absolute;
+		top: 4rem;
+	}
+
+	.container-basic-data-fields ul,
+	.container-basic-data-type ul {
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+}
+
 @media (min-width: 769px) {
+	body {
+		padding: 0;
+	}
+
 	.header {
 		flex-direction: row;
 	}
@@ -24,10 +45,30 @@
 	.titulo-validacion p {
 		font-size: 2rem;
 	}
+
+	.buttons-type {
+		margin: 0;
+		position: absolute;
+	}
+
+	.container-title-informe {
+		flex-direction: row;
+		justify-content: left;
+	}
 }
 
 @media (min-width: 1024px) {
 	.footer {
 		flex-direction: row;
+	}
+}
+
+@media (min-width: 1240px)  {
+	.alerts {
+		flex-direction: column;
+		left: 1rem;
+		max-width: 10rem;
+		position: absolute;
+		top: 4rem;
 	}
 }

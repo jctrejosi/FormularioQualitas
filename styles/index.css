@@ -2,8 +2,8 @@
 	--corporate:#fc881d;
 	--corporate-light:#fda048;
 	--purple: #5817a1;
-	--red: #ff1e00;
-	--red-light: #f0503b;
+	--red: #db3a25;
+	--red-light:#f06d5b;
 	--blue:#0f518b;
 	--blue-light: #1e88e5;
 	--green: #0a6328;
@@ -22,8 +22,9 @@
 }
 
 body {
-	margin: 0;
 	font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+	margin: 0;
+	padding: 0 .5rem;
 }
 
 .header-fix {
@@ -234,8 +235,8 @@ canvas{
 .container-title-informe {
 	align-items: center;
 	display: flex;
-	flex-direction: row;
-	justify-content: left;
+	flex-direction: column-reverse;
+	justify-content: center;
 	margin: 5rem auto;
 	max-width: 50rem;
 }
@@ -250,7 +251,6 @@ canvas{
 	border-radius: .3rem;
 	display: flex;
 	justify-content: left;
-	margin-right: 4rem;
 	padding: 1rem 2rem 1rem;
 	position: relative;
 	transform: skew(-15deg);
@@ -274,14 +274,15 @@ canvas{
 
 .buttons-type {
 	align-items: flex-start;
-	display: flex;
-	border-radius: .5rem;
-	flex-direction: column;
-	padding: 2rem;
-	position: absolute;
-	top: 1rem;
-	left: 1rem;
 	background-color: rgba(230, 230, 230, .7);
+	border-radius: .5rem;
+	display: flex;
+	flex-direction: column;
+	left: 1rem;
+	margin: 2rem auto;
+	padding: 2rem;
+	position: relative;
+	top: 1rem;
 }
 
 .buttons-type h3 {
@@ -381,8 +382,7 @@ canvas{
 .container-basic-data-fields ul,
 .container-basic-data-type ul {
 	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
+	flex-direction: column;
 	list-style: none;
 	width: 100%;
 }
@@ -449,11 +449,10 @@ canvas{
 .alerts {
 	bottom: auto;
 	display: none;
-	flex-direction: column;
-	left: 1rem;
-	max-width: 10rem;
-	position: absolute;
-	top: 4rem;
+	gap: 1rem;
+	margin: 1rem auto;
+	max-width: 70rem;
+	width: 100%;
 }
 
 .search-resume-laft .alerts {
@@ -576,6 +575,7 @@ canvas{
 .container-table-resume {
 	max-width: 70rem;
 	margin: 5rem auto;
+	overflow-x: auto;
 }
 
 .container-table-resume table {
